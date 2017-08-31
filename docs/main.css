@@ -4,6 +4,9 @@
 #drupal-docs {
   color: #2D4DEC;
 }
+#drupal-docs img {
+  height: 55px;
+}
 .toc-menu .menu-item a.link-index {
   position: relative;
   padding-left: 44px;
