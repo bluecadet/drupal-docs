@@ -116,6 +116,17 @@
                 ]
               }
             ]
+          },
+          {
+            "title": "Recipies",
+            "sections": [
+              {
+                "title": "Media Entity Setup"
+              },
+              {
+                "title": "WYSIWYG Setup"
+              }
+            ]
           }
         ]
       },
@@ -131,16 +142,30 @@
         ]
       },
       {
+        "title": "Composer workflow"
+      },
+      {
         "title": "What PM's Need to know",
         "source": "docs/pms.md",
         "url": "pms.html",
         "slug": "pms"
       },
       {
-        "title": "Managing Custom Repos",
-        "source": "docs/custom-repos.md",
-        "url": "custom-repos.html",
-        "slug": "custom-repos"
+        "title": "Custom Modules/Repos",
+        "sections": [
+          {
+            "title": "How to create custom Repos"
+          },
+          {
+            "title": "Managing Custom Repos",
+            "source": "docs/custom-repos.md",
+            "url": "custom-repos.html",
+            "slug": "custom-repos"
+          }
+        ]
+      },
+      {
+        "title": "Drupal vs Wordpress"
       },
       {
         "title": "Other stuff we want to talk about..."
@@ -291,6 +316,8 @@
     "docs/d8/custom-module-examples.md": "d8/custom-module-examples.html",
     "docs/pantheon/README.md": "pantheon/index.html",
     "docs/pms.md": "pms.html",
-    "docs/custom-repos.md": "custom-repos.html"
+    "docs/custom-repos.md": "custom-repos.html",
+    "docs/main.css": "main.css",
+    "docs/img/bc_logo.png": "img/bc_logo.png"
   }
 }
