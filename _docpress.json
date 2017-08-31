@@ -47,7 +47,16 @@
         ]
       },
       {
-        "title": "What PM's Need to know"
+        "title": "What PM's Need to know",
+        "source": "docs/pms.md",
+        "url": "pms.html",
+        "slug": "pms"
+      },
+      {
+        "title": "Managing Custom Repos",
+        "source": "docs/custom-repos.md",
+        "url": "custom-repos.html",
+        "slug": "custom-repos"
       },
       {
         "title": "Other stuff we want to talk about..."
@@ -90,6 +99,18 @@
       "title": "Pantheon - Drupal Docs",
       "pageTitle": "Pantheon",
       "slug": "pantheon"
+    },
+    "pms.html": {
+      "source": "docs/pms.md",
+      "title": "What PM's Need to know - Drupal Docs",
+      "pageTitle": "What PM's Need to know",
+      "slug": "pms"
+    },
+    "custom-repos.html": {
+      "source": "docs/custom-repos.md",
+      "title": "Managing Custom Repos - Drupal Docs",
+      "pageTitle": "Managing Custom Repos",
+      "slug": "custom-repos"
     }
   },
   "sources": {
@@ -98,6 +119,8 @@
     "docs/d7/install.md": "d7/install.html",
     "docs/d8/README.md": "d8/index.html",
     "docs/d8/install.md": "d8/install.html",
-    "docs/pantheon/README.md": "pantheon/index.html"
+    "docs/pantheon/README.md": "pantheon/index.html",
+    "docs/pms.md": "pms.html",
+    "docs/custom-repos.md": "custom-repos.html"
   }
 }
