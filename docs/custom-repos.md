@@ -2,4 +2,4 @@
 
 If you create it, manage it.
 
-If you did not create it, branch it a nd add a pull request.
+If you did not create it, branch it and add a pull request.
