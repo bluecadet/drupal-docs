@@ -1,2 +1,2 @@
-# drupal-docs
+drupal-docs
 =============

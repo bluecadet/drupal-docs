@@ -2,7 +2,6 @@
   "name": "drupal-docs",
   "version": "1.0.0",
   "description": "Documentation for Bluecadet Drupal devs",
-  "main": "index.js",
   "directories": {
     "doc": "docs"
   },
