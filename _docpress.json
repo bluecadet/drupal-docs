@@ -32,6 +32,90 @@
             "source": "docs/d8/install.md",
             "url": "d8/install.html",
             "slug": "d8install"
+          },
+          {
+            "title": "Custom Modules/Themes",
+            "source": "docs/d8/custom-modules.md",
+            "url": "d8/custom-modules.html",
+            "slug": "d8custom-modules",
+            "headings": [
+              {
+                "title": "Themes",
+                "depth": 2,
+                "id": "themes",
+                "headings": [
+                  {
+                    "title": "Maintained",
+                    "depth": 3,
+                    "id": "maintained"
+                  },
+                  {
+                    "title": "Abandoned",
+                    "depth": 3,
+                    "id": "abandoned"
+                  }
+                ]
+              },
+              {
+                "title": "Modules",
+                "depth": 2,
+                "id": "modules",
+                "headings": [
+                  {
+                    "title": "Maintained",
+                    "depth": 3,
+                    "id": "maintained"
+                  },
+                  {
+                    "title": "Abandoned",
+                    "depth": 3,
+                    "id": "abandoned"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Custom Module/Theme Examples",
+            "source": "docs/d8/custom-module-examples.md",
+            "url": "d8/custom-module-examples.html",
+            "slug": "d8custom-module-examples",
+            "headings": [
+              {
+                "title": "Themes",
+                "depth": 2,
+                "id": "themes",
+                "headings": [
+                  {
+                    "title": "Maintained",
+                    "depth": 3,
+                    "id": "maintained"
+                  },
+                  {
+                    "title": "Abandoned",
+                    "depth": 3,
+                    "id": "abandoned"
+                  }
+                ]
+              },
+              {
+                "title": "Modules",
+                "depth": 2,
+                "id": "modules",
+                "headings": [
+                  {
+                    "title": "Maintained",
+                    "depth": 3,
+                    "id": "maintained"
+                  },
+                  {
+                    "title": "Abandoned",
+                    "depth": 3,
+                    "id": "abandoned"
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -94,6 +178,90 @@
       "pageTitle": "Installation",
       "slug": "d8install"
     },
+    "d8/custom-modules.html": {
+      "source": "docs/d8/custom-modules.md",
+      "title": "Custom Modules/Themes - Drupal Docs",
+      "pageTitle": "Custom Modules/Themes",
+      "slug": "d8custom-modules",
+      "headings": [
+        {
+          "title": "Themes",
+          "depth": 2,
+          "id": "themes",
+          "headings": [
+            {
+              "title": "Maintained",
+              "depth": 3,
+              "id": "maintained"
+            },
+            {
+              "title": "Abandoned",
+              "depth": 3,
+              "id": "abandoned"
+            }
+          ]
+        },
+        {
+          "title": "Modules",
+          "depth": 2,
+          "id": "modules",
+          "headings": [
+            {
+              "title": "Maintained",
+              "depth": 3,
+              "id": "maintained"
+            },
+            {
+              "title": "Abandoned",
+              "depth": 3,
+              "id": "abandoned"
+            }
+          ]
+        }
+      ]
+    },
+    "d8/custom-module-examples.html": {
+      "source": "docs/d8/custom-module-examples.md",
+      "title": "Custom Module/Theme Examples - Drupal Docs",
+      "pageTitle": "Custom Module/Theme Examples",
+      "slug": "d8custom-module-examples",
+      "headings": [
+        {
+          "title": "Themes",
+          "depth": 2,
+          "id": "themes",
+          "headings": [
+            {
+              "title": "Maintained",
+              "depth": 3,
+              "id": "maintained"
+            },
+            {
+              "title": "Abandoned",
+              "depth": 3,
+              "id": "abandoned"
+            }
+          ]
+        },
+        {
+          "title": "Modules",
+          "depth": 2,
+          "id": "modules",
+          "headings": [
+            {
+              "title": "Maintained",
+              "depth": 3,
+              "id": "maintained"
+            },
+            {
+              "title": "Abandoned",
+              "depth": 3,
+              "id": "abandoned"
+            }
+          ]
+        }
+      ]
+    },
     "pantheon/index.html": {
       "source": "docs/pantheon/README.md",
       "title": "Pantheon - Drupal Docs",
@@ -119,6 +287,8 @@
     "docs/d7/install.md": "d7/install.html",
     "docs/d8/README.md": "d8/index.html",
     "docs/d8/install.md": "d8/install.html",
+    "docs/d8/custom-modules.md": "d8/custom-modules.html",
+    "docs/d8/custom-module-examples.md": "d8/custom-module-examples.html",
     "docs/pantheon/README.md": "pantheon/index.html",
     "docs/pms.md": "pms.html",
     "docs/custom-repos.md": "custom-repos.html"
