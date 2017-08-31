@@ -8,5 +8,6 @@ Drupal Documentation
   * [Installation](d8/install.md)
 * [Pantheon](pantheon/README.md)
   * Quicksilver
-* What PM's Need to know
+* [What PM's Need to know](pms.md)
+* [Managing Custom Repos](custom-repos.md)
 * Other stuff we want to talk about...
