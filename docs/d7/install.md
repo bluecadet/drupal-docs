@@ -1,1 +1,1 @@
-D7 Installation
+# HOW TO: D7 Installation

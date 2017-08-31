@@ -1,0 +1,21 @@
+.menu.toc-menu {
+  background: #eee;
+}
+#drupal-docs {
+  color: #2D4DEC;
+}
+.toc-menu .menu-item a.link-index {
+  position: relative;
+  padding-left: 44px;
+}
+.toc-menu .menu-item a.link-index:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  background-image: url(/img/bc_logo.png);
+  background-size: cover;
+}

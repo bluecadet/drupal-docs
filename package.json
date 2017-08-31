@@ -20,5 +20,11 @@
   "homepage": "https://github.com/bluecadet/drupal-docs#readme",
   "devDependencies": {
     "docpress": "0.7.1"
+  },
+  "docpress": {
+    "github": "bluecadet/drupal-docs",
+    "css": [
+      "docs/main.css"
+    ]
   }
 }
