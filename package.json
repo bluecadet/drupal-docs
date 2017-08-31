@@ -1,0 +1,25 @@
+{
+  "name": "drupal-docs",
+  "version": "1.0.0",
+  "description": "Documentation for Bluecadet Drupal devs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluecadet/drupal-docs.git"
+  },
+  "author": "Pete Inge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluecadet/drupal-docs/issues"
+  },
+  "homepage": "https://github.com/bluecadet/drupal-docs#readme",
+  "devDependencies": {
+    "docpress": "0.7.1"
+  }
+}
