@@ -8,9 +8,10 @@ Drupal Documentation
   * [Installation](d8/install.md)
   * [Custom Modules/Themes](d8/custom-modules.md)
   * [Custom Module/Theme Examples](d8/custom-module-examples.md)
-  * Recipies
+  * Recipes
     * Media Entity Setup
     * WYSIWYG Setup
+    * [Paragraphs](d8/recipes/paragraphs.md)
 * [Pantheon](pantheon/README.md)
   * Quicksilver
 * Composer workflow
@@ -19,5 +20,6 @@ Drupal Documentation
   * How to create custom Repos
   * [Managing Custom Repos](custom-repos.md)
 * Drupal vs Wordpress
+* For Clients
 
 * Other stuff we want to talk about...
