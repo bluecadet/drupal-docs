@@ -7,4 +7,4 @@
 <br>
 <br>
 
-Everything you ever wanted to know about Drupal.
+Everything you ever wanted to know about Drupal and how it relates to Bluecadet.
