@@ -48,24 +48,3 @@ First, name the item appropriately. "Paragraph" is typically not ideal.
 Second, Edit mode should be set to use the Preview display mode, and the preview should be clear and concise and try to be 3-5 lines high. Take the time to create the extra bit of css to make this look good. <em>(link to how this is done)</em>
 
 Third, take the time to understand and plan Form Displays. Typically with paragraphs not much can be done, but see if anything can be cut out?
-
-
-# Testing1
-
-## Testing2
-
-### Testing3.1
-
-### Testing3.2
-
-#### Testing4
-
-##### Testing5.1
-
-##### Testing5.2
-
-###### Testing6.1
-
-##### Testing5.3
-
-###### Testing6
