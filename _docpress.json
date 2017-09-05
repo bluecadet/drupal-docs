@@ -168,23 +168,6 @@
                     "title": "How we do it!",
                     "depth": 2,
                     "id": "how-we-do-it!"
-                  },
-                  {
-                    "title": "Testing2",
-                    "depth": 2,
-                    "id": "testing2",
-                    "headings": [
-                      {
-                        "title": "Testing3.1",
-                        "depth": 3,
-                        "id": "testing3.1"
-                      },
-                      {
-                        "title": "Testing3.2",
-                        "depth": 3,
-                        "id": "testing3.2"
-                      }
-                    ]
                   }
                 ]
               }
@@ -394,23 +377,6 @@
           "title": "How we do it!",
           "depth": 2,
           "id": "how-we-do-it!"
-        },
-        {
-          "title": "Testing2",
-          "depth": 2,
-          "id": "testing2",
-          "headings": [
-            {
-              "title": "Testing3.1",
-              "depth": 3,
-              "id": "testing3.1"
-            },
-            {
-              "title": "Testing3.2",
-              "depth": 3,
-              "id": "testing3.2"
-            }
-          ]
         }
       ]
     },
