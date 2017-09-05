@@ -22,3 +22,11 @@
   background-image: url(/img/bc_logo.png);
   background-size: cover;
 }
+
+.headings.heading-list ul.-depth-2 {
+  padding-left: 10px;
+}
+
+.headings.heading-list ul.-depth-2 li a:before {
+  width: 8px;
+}

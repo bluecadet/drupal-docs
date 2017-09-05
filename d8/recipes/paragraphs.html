@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="../../main.css?t=48641301">
+    <script src="../../assets/script.js?t=36f3d457"></script>
+    <title>Paragraphs - Drupal Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../../index.html">Drupal Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-d7" href="../../d7/index.html">D7</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-d7install" href="../../d7/install.html">Installation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-d8" href="../../d8/index.html">D8</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-d8install" href="../../d8/install.html">Installation</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8custom-modules" href="../../d8/custom-modules.html">Custom Modules/Themes</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8custom-module-examples" href="../../d8/custom-module-examples.html">Custom Module/Theme Examples</a>
+                </li>
+                <li class="menu-item -level-2 -parent"><span class="title">Recipes</span>
+                  <ul class="submenu">
+                    <li class="menu-item -level-3"><span class="title">Media Entity Setup</span>
+                    </li>
+                    <li class="menu-item -level-3"><span class="title">WYSIWYG Setup</span>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title -active link-d8recipesparagraphs" href="../../d8/recipes/paragraphs.html">Paragraphs</a>
+                      <ul class="headings heading-list">
+                        <li class="heading-item -depth-2"><a class="hlink link-form-display-options" href="#form-display-options">Form Display Options</a>
+                          <ul class="heading-list -depth-2">
+                            <li class="heading-item -depth-3"><a class="hlink link-paragraph-title-plural-paragraph-title" href="#paragraph-title-plural-paragraph-title">Paragraph Title / Plural Paragraph Title</a>
+                            </li>
+                            <li class="heading-item -depth-3"><a class="hlink link-edit-mode" href="#edit-mode">Edit Mode</a>
+                            </li>
+                            <li class="heading-item -depth-3"><a class="hlink link-add-mode" href="#add-mode">Add mode</a>
+                            </li>
+                            <li class="heading-item -depth-3"><a class="hlink link-form-display-mode" href="#form-display-mode">Form Display Mode</a>
+                            </li>
+                            <li class="heading-item -depth-3"><a class="hlink link-default-paragraph-type" href="#default-paragraph-type">Default paragraph type</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="heading-item -depth-2"><a class="hlink link-how-we-do-it!" href="#how-we-do-it!">How we do it!</a>
+                        </li>
+                        <li class="heading-item -depth-2"><a class="hlink link-testing2" href="#testing2">Testing2</a>
+                          <ul class="heading-list -depth-2">
+                            <li class="heading-item -depth-3"><a class="hlink link-testing3.1" href="#testing3.1">Testing3.1</a>
+                            </li>
+                            <li class="heading-item -depth-3"><a class="hlink link-testing3.2" href="#testing3.2">Testing3.2</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-pantheon" href="../../pantheon/index.html">Pantheon</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><span class="title">Quicksilver</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Composer workflow</span>
+            </li>
+            <li class="menu-item -level-1"><a class="link title  link-pms" href="../../pms.html">What PM's Need to know</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Custom Modules/Repos</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><span class="title">How to create custom Repos</span>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-custom-repos" href="../../custom-repos.html">Managing Custom Repos</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Drupal vs Wordpress</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">For Clients</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Other stuff we want to talk about...</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-d8recipesparagraphs">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/bluecadet/drupal-docs" data-title="bluecadet/drupal-docs">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="paragraphs">Paragraphs</h1>
+<p>When setting up a paragraph field, configuring the settings for the <em>Form Display</em> is key to creating a great admin experience. Here are explanations to the options available.</p>
+<h2 id="form-display-options">Form Display Options</h2>
+<p>(at the current time this is the same for Experimental and Classic Paragraph widgets)</p>
+<h3 id="paragraph-title-plural-paragraph-title">Paragraph Title / Plural Paragraph Title</h3>
+<p>Consider changing the name &quot;Paragraph&quot; to something else, like &quot;Block&quot; or &quot;Callout&quot;. Paragraph makes sense to those of us that work closely with Drupal and the Paragraphs module, but may not make sense to a content author.</p>
+<h3 id="edit-mode">Edit Mode</h3>
+<p>When editing an entity, this will be the default display when first landing on a page.</p>
+<p>Ideally, it is recommended to use &quot;Closed&quot; or &quot;Preview&quot; for ease in re-ordering bundles in a long list. Depending on the content of the bundle, &quot;Closed&quot; may not provide enough information for the author to know what is in the bundle. If you configure the &quot;Preview&quot; display modes for Paragraph bundles though, make sure you keep the height as small as possible to understand what bundle it is without hampering the ease of re-ordering. It would be recommended to add some custom css to the admin pages to help with styling of these items.</p>
+<p>Example of two different types. Both fields have duplicates of the exact same content:</p>
+<p>Settings:
+<img src="../../img/para_settings.png" alt="Paragraphs Example">
+Form:
+<img src="../../img/para_example.jpg" alt="Paragraphs Example"></p>
+<h3 id="add-mode">Add mode</h3>
+<p>How is the &quot;add&quot; or &quot;add more&quot; displayed. Consider how many items the author can choose from.</p>
+<h3 id="form-display-mode">Form Display Mode</h3>
+<p>If there are multiple Form Display Modes enabled, you can choose which one. This could be handy for more complicated bundles in which you want to hide fields on the form.</p>
+<h3 id="default-paragraph-type">Default paragraph type</h3>
+<p>If you wanted to try and force the use of a bundle or &quot;Highly suggest&quot; one, this would probably be the way to go. Also, if you always know the first bundle should be a text field, this will help reduce clicks for the editor.</p>
+<br>
+<br>
+<h2 id="how-we-do-it!">How we do it!</h2>
+<p>It is hard to set a single standard for this. Ideally, though these questions should be answered:</p>
+<ol>
+<li>Can the editor understand what is going on (without understanding Drupal-eeze)?</li>
+<li>Can the editor easily understand what each collapsed (pr preview) paragraph bundle contains?</li>
+<li>Can the editor easily rearrange items in the list?</li>
+<li>Can the editor easily add new items in a clear manner?</li>
+</ol>
+<p>For most &quot;Content&quot; fields we do at Bluecadet, the recommendation would be to</p>
+<p>First, name the item appropriately. &quot;Paragraph&quot; is typically not ideal.</p>
+<p>Second, Edit mode should be set to use the Preview display mode, and the preview should be clear and concise and try to be 3-5 lines high. Take the time to create the extra bit of css to make this look good. <em>(link to how this is done)</em></p>
+<p>Third, take the time to understand and plan Form Displays. Typically with paragraphs not much can be done, but see if anything can be cut out?</p>
+<h1 id="testing1">Testing1</h1>
+<h2 id="testing2">Testing2</h2>
+<h3 id="testing3.1">Testing3.1</h3>
+<h3 id="testing3.2">Testing3.2</h3>
+<h4 id="testing4">Testing4</h4>
+<h5 id="testing5.1">Testing5.1</h5>
+<h5 id="testing5.2">Testing5.2</h5>
+<h6 id="testing6.1">Testing6.1</h6>
+<h5 id="testing5.3">Testing5.3</h5>
+<h6 id="testing6">Testing6</h6>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../../d8/custom-module-examples.html"><span class="title">Custom Module/Theme Examples</span></a></div>
+          <div class="right"><a href="../../pantheon/index.html"><span class="label">Next: </span><span class="title">Pantheon</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

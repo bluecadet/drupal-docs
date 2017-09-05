@@ -118,13 +118,75 @@
             ]
           },
           {
-            "title": "Recipies",
+            "title": "Recipes",
             "sections": [
               {
                 "title": "Media Entity Setup"
               },
               {
                 "title": "WYSIWYG Setup"
+              },
+              {
+                "title": "Paragraphs",
+                "source": "docs/d8/recipes/paragraphs.md",
+                "url": "d8/recipes/paragraphs.html",
+                "slug": "d8recipesparagraphs",
+                "headings": [
+                  {
+                    "title": "Form Display Options",
+                    "depth": 2,
+                    "id": "form-display-options",
+                    "headings": [
+                      {
+                        "title": "Paragraph Title / Plural Paragraph Title",
+                        "depth": 3,
+                        "id": "paragraph-title-plural-paragraph-title"
+                      },
+                      {
+                        "title": "Edit Mode",
+                        "depth": 3,
+                        "id": "edit-mode"
+                      },
+                      {
+                        "title": "Add mode",
+                        "depth": 3,
+                        "id": "add-mode"
+                      },
+                      {
+                        "title": "Form Display Mode",
+                        "depth": 3,
+                        "id": "form-display-mode"
+                      },
+                      {
+                        "title": "Default paragraph type",
+                        "depth": 3,
+                        "id": "default-paragraph-type"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "How we do it!",
+                    "depth": 2,
+                    "id": "how-we-do-it!"
+                  },
+                  {
+                    "title": "Testing2",
+                    "depth": 2,
+                    "id": "testing2",
+                    "headings": [
+                      {
+                        "title": "Testing3.1",
+                        "depth": 3,
+                        "id": "testing3.1"
+                      },
+                      {
+                        "title": "Testing3.2",
+                        "depth": 3,
+                        "id": "testing3.2"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -166,6 +228,9 @@
       },
       {
         "title": "Drupal vs Wordpress"
+      },
+      {
+        "title": "For Clients"
       },
       {
         "title": "Other stuff we want to talk about..."
@@ -287,6 +352,68 @@
         }
       ]
     },
+    "d8/recipes/paragraphs.html": {
+      "source": "docs/d8/recipes/paragraphs.md",
+      "title": "Paragraphs - Drupal Docs",
+      "pageTitle": "Paragraphs",
+      "slug": "d8recipesparagraphs",
+      "headings": [
+        {
+          "title": "Form Display Options",
+          "depth": 2,
+          "id": "form-display-options",
+          "headings": [
+            {
+              "title": "Paragraph Title / Plural Paragraph Title",
+              "depth": 3,
+              "id": "paragraph-title-plural-paragraph-title"
+            },
+            {
+              "title": "Edit Mode",
+              "depth": 3,
+              "id": "edit-mode"
+            },
+            {
+              "title": "Add mode",
+              "depth": 3,
+              "id": "add-mode"
+            },
+            {
+              "title": "Form Display Mode",
+              "depth": 3,
+              "id": "form-display-mode"
+            },
+            {
+              "title": "Default paragraph type",
+              "depth": 3,
+              "id": "default-paragraph-type"
+            }
+          ]
+        },
+        {
+          "title": "How we do it!",
+          "depth": 2,
+          "id": "how-we-do-it!"
+        },
+        {
+          "title": "Testing2",
+          "depth": 2,
+          "id": "testing2",
+          "headings": [
+            {
+              "title": "Testing3.1",
+              "depth": 3,
+              "id": "testing3.1"
+            },
+            {
+              "title": "Testing3.2",
+              "depth": 3,
+              "id": "testing3.2"
+            }
+          ]
+        }
+      ]
+    },
     "pantheon/index.html": {
       "source": "docs/pantheon/README.md",
       "title": "Pantheon - Drupal Docs",
@@ -314,10 +441,13 @@
     "docs/d8/install.md": "d8/install.html",
     "docs/d8/custom-modules.md": "d8/custom-modules.html",
     "docs/d8/custom-module-examples.md": "d8/custom-module-examples.html",
+    "docs/d8/recipes/paragraphs.md": "d8/recipes/paragraphs.html",
     "docs/pantheon/README.md": "pantheon/index.html",
     "docs/pms.md": "pms.html",
     "docs/custom-repos.md": "custom-repos.html",
     "docs/main.css": "main.css",
-    "docs/img/bc_logo.png": "img/bc_logo.png"
+    "docs/img/bc_logo.png": "img/bc_logo.png",
+    "docs/img/para_example.jpg": "img/para_example.jpg",
+    "docs/img/para_settings.png": "img/para_settings.png"
   }
 }
