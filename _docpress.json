@@ -199,13 +199,22 @@
         "title": "Custom Modules/Repos",
         "sections": [
           {
-            "title": "How to create custom Repos"
+            "title": "How to Create Custom Managed Modules",
+            "source": "docs/create-custom-repos.md",
+            "url": "create-custom-repos.html",
+            "slug": "create-custom-repos"
           },
           {
-            "title": "Managing Custom Repos",
-            "source": "docs/custom-repos.md",
-            "url": "custom-repos.html",
-            "slug": "custom-repos"
+            "title": "How to Use Custom Managed Modules",
+            "source": "docs/use-custom-repos.md",
+            "url": "use-custom-repos.html",
+            "slug": "use-custom-repos"
+          },
+          {
+            "title": "How to Manage Custom Modules",
+            "source": "docs/manage-custom-repos.md",
+            "url": "manage-custom-repos.html",
+            "slug": "manage-custom-repos"
           }
         ]
       },
@@ -392,11 +401,23 @@
       "pageTitle": "What PM's Need to know",
       "slug": "pms"
     },
-    "custom-repos.html": {
-      "source": "docs/custom-repos.md",
-      "title": "Managing Custom Repos - Drupal Docs",
-      "pageTitle": "Managing Custom Repos",
-      "slug": "custom-repos"
+    "create-custom-repos.html": {
+      "source": "docs/create-custom-repos.md",
+      "title": "How to Create Custom Managed Modules - Drupal Docs",
+      "pageTitle": "How to Create Custom Managed Modules",
+      "slug": "create-custom-repos"
+    },
+    "use-custom-repos.html": {
+      "source": "docs/use-custom-repos.md",
+      "title": "How to Use Custom Managed Modules - Drupal Docs",
+      "pageTitle": "How to Use Custom Managed Modules",
+      "slug": "use-custom-repos"
+    },
+    "manage-custom-repos.html": {
+      "source": "docs/manage-custom-repos.md",
+      "title": "How to Manage Custom Modules - Drupal Docs",
+      "pageTitle": "How to Manage Custom Modules",
+      "slug": "manage-custom-repos"
     }
   },
   "sources": {
@@ -410,7 +431,9 @@
     "docs/d8/recipes/paragraphs.md": "d8/recipes/paragraphs.html",
     "docs/pantheon/README.md": "pantheon/index.html",
     "docs/pms.md": "pms.html",
-    "docs/custom-repos.md": "custom-repos.html",
+    "docs/create-custom-repos.md": "create-custom-repos.html",
+    "docs/use-custom-repos.md": "use-custom-repos.html",
+    "docs/manage-custom-repos.md": "manage-custom-repos.html",
     "docs/main.css": "main.css",
     "docs/img/bc_logo.png": "img/bc_logo.png",
     "docs/img/para_example.jpg": "img/para_example.jpg",
