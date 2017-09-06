@@ -26,5 +26,8 @@ NONE
 #### [Bluecadet Utilities](https://github.com/bluecadet/bluecadet_utilities)
 This module provides basic utilities to aide in the development of Drupal 8 projects.
 
+#### [Breadcrumb Dropdown Menu](https://github.com/bluecadet/breadcrumb_dropdown_menu)
+This module provides collapsible blocks of menu items..
+
 ### Abandoned
 NONE
