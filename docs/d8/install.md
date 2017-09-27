@@ -24,9 +24,9 @@ Details pulled from: https://pantheon.io/docs/guides/build-tools/
 <hr>
 
 1. Setting Up local environment
-    1. clone repo `git clone git@github.com:bluecadet/mann-web.git [DIR]`
+    1. Clone repo `git clone git@github.com:bluecadet/mann-web.git [DIR]`
     obviously change out dir and path...
-    1. run `composer install`
+    1. Run `composer install`
     1. Setup DB
         1. Create DB export in Pantheon
         1. Create local DB
@@ -34,7 +34,7 @@ Details pulled from: https://pantheon.io/docs/guides/build-tools/
         1. Setup any local permissions for MySQL if you have any
     1. Find Hash Salt from Pantheon
         Run `terminus drush <site>.<env> -- ev 'return getenv("DRUPAL_HASH_SALT")'`
-    1. copy `/web/sites/example.settings.local.php` to `/web/sites/default/settings.local.php`
+    1. Copy `/web/sites/example.settings.local.php` to `/web/sites/default/settings.local.php`
     1. Add DB info around line 17
         ```
         $databases['default']['default'] = array (
