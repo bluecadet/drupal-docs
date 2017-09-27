@@ -31,7 +31,26 @@
             "title": "Installation",
             "source": "docs/d8/install.md",
             "url": "d8/install.html",
-            "slug": "d8install"
+            "slug": "d8install",
+            "headings": [
+              {
+                "title": "On Pantheon",
+                "depth": 2,
+                "id": "on-pantheon",
+                "headings": [
+                  {
+                    "title": "Traditional (?)",
+                    "depth": 3,
+                    "id": "traditional-()"
+                  },
+                  {
+                    "title": "Composer Workflow/Continuous integration.",
+                    "depth": 3,
+                    "id": "composer-workflowcontinuous-integration."
+                  }
+                ]
+              }
+            ]
           },
           {
             "title": "Custom Modules/Themes",
@@ -258,7 +277,26 @@
       "source": "docs/d8/install.md",
       "title": "Installation - Drupal Docs",
       "pageTitle": "Installation",
-      "slug": "d8install"
+      "slug": "d8install",
+      "headings": [
+        {
+          "title": "On Pantheon",
+          "depth": 2,
+          "id": "on-pantheon",
+          "headings": [
+            {
+              "title": "Traditional (?)",
+              "depth": 3,
+              "id": "traditional-()"
+            },
+            {
+              "title": "Composer Workflow/Continuous integration.",
+              "depth": 3,
+              "id": "composer-workflowcontinuous-integration."
+            }
+          ]
+        }
+      ]
     },
     "d8/custom-modules.html": {
       "source": "docs/d8/custom-modules.md",
