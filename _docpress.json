@@ -140,7 +140,10 @@
             "title": "Recipes",
             "sections": [
               {
-                "title": "Media Entity Setup (d8/media.md)"
+                "title": "Media Entity Setup",
+                "source": "docs/d8/media.md",
+                "url": "d8/media.html",
+                "slug": "d8media"
               },
               {
                 "title": "WYSIWYG Setup"
@@ -382,6 +385,12 @@
         }
       ]
     },
+    "d8/media.html": {
+      "source": "docs/d8/media.md",
+      "title": "Media Entity Setup - Drupal Docs",
+      "pageTitle": "Media Entity Setup",
+      "slug": "d8media"
+    },
     "d8/recipes/paragraphs.html": {
       "source": "docs/d8/recipes/paragraphs.md",
       "title": "Paragraphs - Drupal Docs",
@@ -466,13 +475,13 @@
     "docs/d8/install.md": "d8/install.html",
     "docs/d8/custom-modules.md": "d8/custom-modules.html",
     "docs/d8/custom-module-examples.md": "d8/custom-module-examples.html",
+    "docs/d8/media.md": "d8/media.html",
     "docs/d8/recipes/paragraphs.md": "d8/recipes/paragraphs.html",
     "docs/pantheon/README.md": "pantheon/index.html",
     "docs/pms.md": "pms.html",
     "docs/create-custom-repos.md": "create-custom-repos.html",
     "docs/use-custom-repos.md": "use-custom-repos.html",
     "docs/manage-custom-repos.md": "manage-custom-repos.html",
-    "docs/bc_logo.png": "bc_logo.png",
     "docs/main.css": "main.css",
     "docs/scripts.js": "scripts.js",
     "docs/img/bc_logo.png": "img/bc_logo.png",
