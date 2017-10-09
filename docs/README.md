@@ -9,7 +9,7 @@ Drupal Documentation
   * [Custom Modules/Themes](d8/custom-modules.md)
   * [Custom Module/Theme Examples](d8/custom-module-examples.md)
   * Recipes
-    * [Media Entity Setup] (d8/media.md)
+    * [Media Entity Setup](d8/media.md)
     * WYSIWYG Setup
     * [Paragraphs](d8/recipes/paragraphs.md)
 * [Pantheon](pantheon/README.md)
