@@ -26,6 +26,9 @@
     "github": "bluecadet/drupal-docs",
     "css": [
       "docs/main.css"
+    ],
+    "scripts": [
+      "scripts.js"
     ]
   }
 }
