@@ -22,6 +22,7 @@
     "docpress": "0.7.1"
   },
   "docpress": {
+    "docs": "docs",
     "github": "bluecadet/drupal-docs",
     "css": [
       "docs/main.css"
