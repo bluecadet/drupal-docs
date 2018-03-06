@@ -11,6 +11,7 @@ Drupal Documentation
   * Recipes
     * [Media Entity Setup](d8/media.md)
     * WYSIWYG Setup
+    * [CKEditor Plugins](d8/recipes/ckeditor.md)
     * [Paragraphs](d8/recipes/paragraphs.md)
 * [Pantheon](pantheon/README.md)
   * Quicksilver
