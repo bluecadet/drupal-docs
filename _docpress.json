@@ -149,6 +149,12 @@
                 "title": "WYSIWYG Setup"
               },
               {
+                "title": "CKEditor Plugins",
+                "source": "docs/d8/recipes/ckeditor.md",
+                "url": "d8/recipes/ckeditor.html",
+                "slug": "d8recipesckeditor"
+              },
+              {
                 "title": "Paragraphs",
                 "source": "docs/d8/recipes/paragraphs.md",
                 "url": "d8/recipes/paragraphs.html",
@@ -391,6 +397,12 @@
       "pageTitle": "Media Entity Setup",
       "slug": "d8media"
     },
+    "d8/recipes/ckeditor.html": {
+      "source": "docs/d8/recipes/ckeditor.md",
+      "title": "CKEditor Plugins - Drupal Docs",
+      "pageTitle": "CKEditor Plugins",
+      "slug": "d8recipesckeditor"
+    },
     "d8/recipes/paragraphs.html": {
       "source": "docs/d8/recipes/paragraphs.md",
       "title": "Paragraphs - Drupal Docs",
@@ -476,6 +488,7 @@
     "docs/d8/custom-modules.md": "d8/custom-modules.html",
     "docs/d8/custom-module-examples.md": "d8/custom-module-examples.html",
     "docs/d8/media.md": "d8/media.html",
+    "docs/d8/recipes/ckeditor.md": "d8/recipes/ckeditor.html",
     "docs/d8/recipes/paragraphs.md": "d8/recipes/paragraphs.html",
     "docs/pantheon/README.md": "pantheon/index.html",
     "docs/pms.md": "pms.html",
