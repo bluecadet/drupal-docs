@@ -26,8 +26,19 @@ NONE
 #### [Bluecadet Utilities](https://github.com/bluecadet/bluecadet_utilities)
 This module provides basic utilities to aide in the development of Drupal 8 projects.
 
+#### [Bluecadet Image Derivatives](https://github.com/bluecadet/bluecadet_image_derivatives)
+This module provides the ability to create image derivatives through cron. Specifically usefull for providing images for interactives.
+
+#### [Bluecadet Google Cusotm Search Engine](https://github.com/bluecadet/bluecadet_gcse)
+This module provides integration for Googles CSE. We do it "our way".
+
+#### [Bluecadet Push Subscription Manager](https://github.com/bluecadet/bc_ps_manager_DRUPAL)
+This module provides base functionality for Push Subscriptions.
+
 #### [Breadcrumb Dropdown Menu](https://github.com/bluecadet/breadcrumb_dropdown_menu)
 This module provides collapsible blocks of menu items..
+
+
 
 ### Abandoned
 NONE
