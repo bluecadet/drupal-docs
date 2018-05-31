@@ -146,7 +146,7 @@
                 "slug": "d8media"
               },
               {
-                "title": "WYSIWYG Setup"
+                "title": "[NEED PAGE] WYSIWYG Setup"
               },
               {
                 "title": "CKEditor Plugins",
@@ -210,7 +210,10 @@
         "slug": "pantheon",
         "sections": [
           {
-            "title": "Quicksilver"
+            "title": "Quicksilver",
+            "source": "docs/pantheon/quicksilver.md",
+            "url": "pantheon/quicksilver.html",
+            "slug": "pantheonquicksilver"
           }
         ]
       },
@@ -247,10 +250,10 @@
         ]
       },
       {
-        "title": "Drupal vs Wordpress"
+        "title": "[NEED PAGE] Drupal vs Wordpress"
       },
       {
-        "title": "For Clients"
+        "title": "[NEED PAGE] For Clients"
       },
       {
         "title": "Other stuff we want to talk about..."
@@ -454,6 +457,12 @@
       "pageTitle": "Pantheon",
       "slug": "pantheon"
     },
+    "pantheon/quicksilver.html": {
+      "source": "docs/pantheon/quicksilver.md",
+      "title": "Quicksilver - Drupal Docs",
+      "pageTitle": "Quicksilver",
+      "slug": "pantheonquicksilver"
+    },
     "pms.html": {
       "source": "docs/pms.md",
       "title": "What PM's Need to know - Drupal Docs",
@@ -491,6 +500,7 @@
     "docs/d8/recipes/ckeditor.md": "d8/recipes/ckeditor.html",
     "docs/d8/recipes/paragraphs.md": "d8/recipes/paragraphs.html",
     "docs/pantheon/README.md": "pantheon/index.html",
+    "docs/pantheon/quicksilver.md": "pantheon/quicksilver.html",
     "docs/pms.md": "pms.html",
     "docs/create-custom-repos.md": "create-custom-repos.html",
     "docs/use-custom-repos.md": "use-custom-repos.html",

@@ -30,3 +30,7 @@
 .headings.heading-list ul.-depth-2 li a:before {
   width: 8px;
 }
+
+.red {
+  color: red;
+}
