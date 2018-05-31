@@ -5,7 +5,6 @@
 
 <br>
 <br>
-<div id="test-JS"></div>
 <br>
 
 Everything you ever wanted to know about Drupal and how it relates to Bluecadet.
