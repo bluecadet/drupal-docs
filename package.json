@@ -30,6 +30,13 @@
     ],
     "scripts": [
       "scripts.js"
-    ]
+    ],
+    "markdown": {
+      "plugins": {
+        "decorate": {
+          "html": true
+        }
+      }
+    }
   }
 }

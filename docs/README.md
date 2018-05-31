@@ -10,18 +10,18 @@ Drupal Documentation
   * [Custom Module/Theme Examples](d8/custom-module-examples.md)
   * Recipes
     * [Media Entity Setup](d8/media.md)
-    * WYSIWYG Setup
+    * <span class="red">[[NEED PAGE]]</span> WYSIWYG Setup
     * [CKEditor Plugins](d8/recipes/ckeditor.md)
     * [Paragraphs](d8/recipes/paragraphs.md)
 * [Pantheon](pantheon/README.md)
-  * Quicksilver
+  * [Quicksilver](pantheon/quicksilver.md)
 * Composer workflow
 * [What PM's Need to know](pms.md)
 * Custom Modules/Repos
   * [How to Create Custom Managed Modules](create-custom-repos.md)
   * [How to Use Custom Managed Modules](use-custom-repos.md)
   * [How to Manage Custom Modules](manage-custom-repos.md)
-* Drupal vs Wordpress
-* For Clients
+* <span class="red">[[NEED PAGE]]</span> Drupal vs Wordpress
+* <span class="red">[[NEED PAGE]]</span> For Clients
 
 * Other stuff we want to talk about...
