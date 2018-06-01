@@ -49,6 +49,23 @@
                     "id": "composer-workflowcontinuous-integration."
                   }
                 ]
+              },
+              {
+                "title": "Setting Up local environment",
+                "depth": 2,
+                "id": "setting-up-local-environment",
+                "headings": [
+                  {
+                    "title": "Traditional",
+                    "depth": 3,
+                    "id": "traditional"
+                  },
+                  {
+                    "title": "With Lando",
+                    "depth": 3,
+                    "id": "with-lando"
+                  }
+                ]
               }
             ]
           },
@@ -305,6 +322,23 @@
               "title": "Composer Workflow/Continuous integration.",
               "depth": 3,
               "id": "composer-workflowcontinuous-integration."
+            }
+          ]
+        },
+        {
+          "title": "Setting Up local environment",
+          "depth": 2,
+          "id": "setting-up-local-environment",
+          "headings": [
+            {
+              "title": "Traditional",
+              "depth": 3,
+              "id": "traditional"
+            },
+            {
+              "title": "With Lando",
+              "depth": 3,
+              "id": "with-lando"
             }
           ]
         }

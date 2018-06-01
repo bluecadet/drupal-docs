@@ -35,6 +35,14 @@
                         </li>
                       </ul>
                     </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-setting-up-local-environment" href="#setting-up-local-environment">Setting Up local environment</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-traditional" href="#traditional">Traditional</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-with-lando" href="#with-lando">With Lando</a>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
                 <li class="menu-item -level-2"><a class="link title  link-d8custom-modules" href="../d8/custom-modules.html">Custom Modules/Themes</a>
@@ -109,24 +117,23 @@ make sure to include team and org, otherwise projects will be saved to your pers
 <li>Setup backups for the site. If this is a sandbox (unpaid) site, you will need to do this through a terminus command [LINK]</li>
 </ol>
 <hr>
-<ol>
-<li>Setting Up local environment
+<h2 id="setting-up-local-environment">Setting Up local environment</h2>
+<h3 id="traditional">Traditional</h3>
 <ol>
 <li>Clone repo <code>git clone git@github.com:bluecadet/mann-web.git [DIR]</code>
 obviously change out dir and path...</li>
 <li>Run <code>composer install</code></li>
-<li>Setup DB
-<ol>
+<li>Setup DB</li>
 <li>Create DB export in Pantheon</li>
 <li>Create local DB</li>
 <li>Import DB from Pantheon</li>
 <li>Setup any local permissions for MySQL if you have any</li>
-</ol>
-</li>
 <li>Find Hash Salt from Pantheon
 Run <code>terminus drush &lt;site&gt;.&lt;env&gt; -- ev &apos;return getenv(&quot;DRUPAL_HASH_SALT&quot;)&apos;</code></li>
 <li>Copy <code>/web/sites/example.settings.local.php</code> to <code>/web/sites/default/settings.local.php</code></li>
-<li>Add DB info around line 17<pre><code>$databases[&apos;default&apos;][&apos;default&apos;] = array (
+<li>Add DB info around line 17</li>
+</ol>
+<pre><code>$databases[&apos;default&apos;][&apos;default&apos;] = array (
   &apos;database&apos; =&gt; &apos;[DB-name]&apos;,
   &apos;username&apos; =&gt; &apos;[DB-username]&apos;,
   &apos;password&apos; =&gt; &apos;[DB-userpassword]&apos;,
@@ -137,10 +144,12 @@ Run <code>terminus drush &lt;site&gt;.&lt;env&gt; -- ev &apos;return getenv(&quo
   &apos;driver&apos; =&gt; &apos;mysql&apos;,
 );
 </code></pre>
-</li>
-<li>Add hash_salt from above to end of file. Should look something like:<pre><code>$settings[&apos;hash_salt&apos;] = &apos;X/ZoCz4bINpIQq1xufoInrULRDtN0UABMUW7m09HcCY=&apos;;
+<ol>
+<li>Add hash_salt from above to end of file. Should look something like:</li>
+</ol>
+<pre><code>$settings[&apos;hash_salt&apos;] = &apos;X/ZoCz4bINpIQq1xufoInrULRDtN0UABMUW7m09HcCY=&apos;;
 </code></pre>
-</li>
+<ol>
 <li>Setup local settings for domain name or however you have it setup</li>
 <li>Add trusted local host patterns for your local development</li>
 </ol>
@@ -150,8 +159,40 @@ $settings[&apos;trusted_host_patterns&apos;][] = &apos;^localhost.com$&apos;;
 <ol>
 <li>Try it out!</li>
 </ol>
-</li>
+<h3 id="with-lando">With Lando</h3>
+<p>If you do not already have lando installed, visit <a href="https://docs.devwithlando.io/installation/installing.html">https://docs.devwithlando.io/installation/installing.html</a></p>
+<ol>
+<li>Clone repo <code>git clone git@github.com:bluecadet/[INSERT-REPO-NAME].git [DIR]</code></li>
+<li>In terminal, <code>cd</code> into the project directory and run <code>lando init</code></li>
+<li>Select <code>Pantheon</code> as the recipie, and select your Pantheon account. Select the site from the list.</li>
+<li>You may need to add a machine token if you are not logged in. Add the token with <code>lando terminus auth:login --machine-token=[YOUR_MACHINE_TOKEN]</code>.
+<ol>
+<li>Info to create tokens can be found <a href="https://pantheon.io/docs/machine-tokens/">here</a></li>
 </ol>
+</li>
+<li>Run <code>lando start</code></li>
+<li>Run <code>lando pull</code>.</li>
+<li>You can pull code from the <code>dev</code> enviornment to make sure you are up to date (or none).</li>
+<li>Pull the database from <code>dev</code></li>
+<li>Optionally pull files from <code>dev</code> (or select none)</li>
+</ol>
+<h4 id="get-a-local-url">Get a local url</h4>
+<p>Run <code>lando info</code>. In the resulting json, your local urls can be found at:</p>
+<pre><code>{
+  ...
+  &quot;edge&quot;:
+    ...
+    &quot;urls&quot;:
+      &quot;http://localhost:32801&quot;,
+      &quot;http://yoursitename.lndo.site&quot;,
+      &quot;https://yoursitename.lndo.site&quot;
+}
+</code></pre>
+<p>Visit one of these urls and make sure everything is working as expected.</p>
+<h4 id="notes:">Notes:</h4>
+<p>When using Lando, all <code>terminus</code> commands should be prepended with <code>lando</code>, i.e:</p>
+<pre><code>lando terminus drush cim
+</code></pre>
 
         </div>
         <div class="footer-nav">
