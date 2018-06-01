@@ -160,7 +160,29 @@
                 "title": "Media Entity Setup",
                 "source": "docs/d8/media.md",
                 "url": "d8/media.html",
-                "slug": "d8media"
+                "slug": "d8media",
+                "headings": [
+                  {
+                    "title": "Install core Media module.",
+                    "depth": 2,
+                    "id": "install-core-media-module."
+                  },
+                  {
+                    "title": "Setup Media Entity Forms",
+                    "depth": 2,
+                    "id": "setup-media-entity-forms"
+                  },
+                  {
+                    "title": "Specific Per Media Type (video for example)",
+                    "depth": 2,
+                    "id": "specific-per-media-type-(video-for-example)"
+                  },
+                  {
+                    "title": "Setup Media Field on Node",
+                    "depth": 2,
+                    "id": "setup-media-field-on-node"
+                  }
+                ]
               },
               {
                 "title": "[NEED PAGE] WYSIWYG Setup"
@@ -432,7 +454,29 @@
       "source": "docs/d8/media.md",
       "title": "Media Entity Setup - Drupal Docs",
       "pageTitle": "Media Entity Setup",
-      "slug": "d8media"
+      "slug": "d8media",
+      "headings": [
+        {
+          "title": "Install core Media module.",
+          "depth": 2,
+          "id": "install-core-media-module."
+        },
+        {
+          "title": "Setup Media Entity Forms",
+          "depth": 2,
+          "id": "setup-media-entity-forms"
+        },
+        {
+          "title": "Specific Per Media Type (video for example)",
+          "depth": 2,
+          "id": "specific-per-media-type-(video-for-example)"
+        },
+        {
+          "title": "Setup Media Field on Node",
+          "depth": 2,
+          "id": "setup-media-field-on-node"
+        }
+      ]
     },
     "d8/recipes/ckeditor.html": {
       "source": "docs/d8/recipes/ckeditor.md",

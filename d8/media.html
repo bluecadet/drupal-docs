@@ -34,6 +34,16 @@
                 <li class="menu-item -level-2 -parent"><span class="title">Recipes</span>
                   <ul class="submenu">
                     <li class="menu-item -level-3"><a class="link title -active link-d8media" href="../d8/media.html">Media Entity Setup</a>
+                      <ul class="headings heading-list">
+                        <li class="heading-item -depth-2"><a class="hlink link-install-core-media-module." href="#install-core-media-module.">Install core Media module.</a>
+                        </li>
+                        <li class="heading-item -depth-2"><a class="hlink link-setup-media-entity-forms" href="#setup-media-entity-forms">Setup Media Entity Forms</a>
+                        </li>
+                        <li class="heading-item -depth-2"><a class="hlink link-specific-per-media-type-(video-for-example)" href="#specific-per-media-type-(video-for-example)">Specific Per Media Type (video for example)</a>
+                        </li>
+                        <li class="heading-item -depth-2"><a class="hlink link-setup-media-field-on-node" href="#setup-media-field-on-node">Setup Media Field on Node</a>
+                        </li>
+                      </ul>
                     </li>
                     <li class="menu-item -level-3"><span class="title">[NEED PAGE] WYSIWYG Setup</span>
                     </li>
@@ -83,7 +93,95 @@
         <div class="markdown-body"><h1 id="media-(less-d8.3)">Media (&lt; D8.3)</h1>
 <p><a href="https://www.webwash.net/manage-media-assets-drupal-8/">https://www.webwash.net/manage-media-assets-drupal-8/</a></p>
 <h1 id="media-(greater-d8.3-media-in-core)">Media (&gt; D8.3 = Media in Core)</h1>
-<p><a href="https://docs.google.com/document/d/1mOQBceLQ21xatG0jgsej1gl-vtwSX3YpnvPxYBz88oE/edit">https://docs.google.com/document/d/1mOQBceLQ21xatG0jgsej1gl-vtwSX3YpnvPxYBz88oE/edit</a></p>
+<h2 id="install-core-media-module.">Install core Media module.</h2>
+<p>Note: Media module will install types:</p>
+<ul>
+<li>Audio</li>
+<li>File</li>
+<li>Image</li>
+<li>Video</li>
+</ul>
+<ol>
+<li>Make sure CTools is installed</li>
+<li>Enale Core Media module</li>
+<li>Download and enable &apos;Entity Browser&apos; and make sure it is on 2.x branch</li>
+</ol>
+<ul>
+<li><code>drush dl entity_browser-2.x</code></li>
+</ul>
+<ol>
+<li>Download and enable &apos;Media Entity Browser&apos; and make sure it is on 2.x branch</li>
+</ol>
+<ul>
+<li><code>drush dl media_entity_browser-2.x</code></li>
+</ul>
+<h2 id="setup-media-entity-forms">Setup Media Entity Forms</h2>
+<ol>
+<li>Add new Form Mode for Media
+<ol>
+<li>Got to Structure &gt;&gt; Display Modes  &gt;&gt; Form Modes &gt;&gt; Add</li>
+<li>Click Media</li>
+<li>Add &quot;Inline Form&quot;</li>
+</ol>
+</li>
+<li>Create New Form
+<ol>
+<li>Goto Structure &gt;&gt; Media Types &gt;&gt; Video &gt;&gt; Manage Form Display</li>
+<li>Open Custom Display Settings</li>
+<li>Add &quot;Inline Form&quot;</li>
+<li>Go to Inline Form tab</li>
+<li>Remove un-needed fields</li>
+</ol>
+</li>
+</ol>
+<h2 id="specific-per-media-type-(video-for-example)">Specific Per Media Type (video for example)</h2>
+<ol>
+<li>Create Entity Browser (video)</li>
+<li>Create Media View for video
+<ol>
+<li>Edit /Media Browser/ View</li>
+<li>Duplicate Display</li>
+<li>Change Filter criteria
+<ol>
+<li>Media: Media Type should not be exposed</li>
+<li>And Video selected (This display only)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Add Widget (view)  with newly created view display
+<ol>
+<li>Under the &quot;Configuration&quot; tab click on &quot;Content Authoring&quot;.</li>
+<li>Click &quot;Entity Browsers&quot;</li>
+<li>Add Entity Browser</li>
+<li>In &quot;General Information&quot;, edit the necessary settings and click &quot;Next&quot;.</li>
+<li>Edit &quot;Display&quot; settings.</li>
+<li>You may skip the next two steps, &quot;Widget Selector&quot; and &quot;Section Display&quot; as you will not have configuration options.</li>
+<li>In the &quot;Widgets&quot; section, select the necessary widgets to add and edit the widget settings as needed.</li>
+<li>When you&apos;re done, click &quot;Finish&quot;!</li>
+</ol>
+</li>
+</ol>
+<h2 id="setup-media-field-on-node">Setup Media Field on Node</h2>
+<ol>
+<li>Go to Manage Fields on Node CT</li>
+<li>Add field</li>
+<li>Reference -&gt; Media</li>
+<li>Add title and machine name</li>
+<li>Set settings</li>
+<li>Goto Manage Form Display</li>
+<li>Widget set to Inline Entity Form - Complex</li>
+<li>For those settings
+<ol>
+<li>Form Mode: Inline Form</li>
+<li>Allow users to add new</li>
+<li>Allow users to add existing</li>
+<li>Autocomplete: Contains</li>
+<li>Entity Browser: Video Media Browser</li>
+<li>SAVE</li>
+</ol>
+</li>
+</ol>
 
         </div>
         <div class="footer-nav">
