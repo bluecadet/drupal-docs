@@ -13,6 +13,7 @@ Drupal Documentation
     * <span class="red">[[NEED PAGE]]</span> WYSIWYG Setup
     * [CKEditor Plugins](d8/recipes/ckeditor.md)
     * [Paragraphs](d8/recipes/paragraphs.md)
+    * [#States](d8/recipes/states.md)
 * [Pantheon](pantheon/README.md)
   * [Quicksilver](pantheon/quicksilver.md)
 * Composer workflow
