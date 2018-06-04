@@ -237,6 +237,31 @@
                     "id": "how-we-do-it!"
                   }
                 ]
+              },
+              {
+                "title": "#States",
+                "source": "docs/d8/recipes/states.md",
+                "url": "d8/recipes/states.html",
+                "slug": "d8recipesstates",
+                "headings": [
+                  {
+                    "title": "Simple Form exmaple",
+                    "depth": 2,
+                    "id": "simple-form-exmaple"
+                  },
+                  {
+                    "title": "Within a Paragraph bundle",
+                    "depth": 2,
+                    "id": "within-a-paragraph-bundle",
+                    "headings": [
+                      {
+                        "title": "Useful Links",
+                        "depth": 3,
+                        "id": "useful-links"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -529,6 +554,31 @@
         }
       ]
     },
+    "d8/recipes/states.html": {
+      "source": "docs/d8/recipes/states.md",
+      "title": "#States - Drupal Docs",
+      "pageTitle": "#States",
+      "slug": "d8recipesstates",
+      "headings": [
+        {
+          "title": "Simple Form exmaple",
+          "depth": 2,
+          "id": "simple-form-exmaple"
+        },
+        {
+          "title": "Within a Paragraph bundle",
+          "depth": 2,
+          "id": "within-a-paragraph-bundle",
+          "headings": [
+            {
+              "title": "Useful Links",
+              "depth": 3,
+              "id": "useful-links"
+            }
+          ]
+        }
+      ]
+    },
     "pantheon/index.html": {
       "source": "docs/pantheon/README.md",
       "title": "Pantheon - Drupal Docs",
@@ -577,6 +627,7 @@
     "docs/d8/media.md": "d8/media.html",
     "docs/d8/recipes/ckeditor.md": "d8/recipes/ckeditor.html",
     "docs/d8/recipes/paragraphs.md": "d8/recipes/paragraphs.html",
+    "docs/d8/recipes/states.md": "d8/recipes/states.html",
     "docs/pantheon/README.md": "pantheon/index.html",
     "docs/pantheon/quicksilver.md": "pantheon/quicksilver.html",
     "docs/pms.md": "pms.html",

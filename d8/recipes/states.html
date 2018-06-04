@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="../../main.css?t=734caa58">
+    <script src="../../assets/script.js?t=36f3d457"></script>
+    <script src="../../scripts.js?t=56b80ffb"></script>
+    <title>#States - Drupal Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../../index.html">Drupal Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-d7" href="../../d7/index.html">D7</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-d7install" href="../../d7/install.html">Installation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-d8" href="../../d8/index.html">D8</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-d8install" href="../../d8/install.html">Installation</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8custom-modules" href="../../d8/custom-modules.html">Custom Modules/Themes</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8custom-module-examples" href="../../d8/custom-module-examples.html">Custom Module/Theme Examples</a>
+                </li>
+                <li class="menu-item -level-2 -parent"><span class="title">Recipes</span>
+                  <ul class="submenu">
+                    <li class="menu-item -level-3"><a class="link title  link-d8media" href="../../d8/media.html">Media Entity Setup</a>
+                    </li>
+                    <li class="menu-item -level-3"><span class="title">[NEED PAGE] WYSIWYG Setup</span>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title  link-d8recipesckeditor" href="../../d8/recipes/ckeditor.html">CKEditor Plugins</a>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title  link-d8recipesparagraphs" href="../../d8/recipes/paragraphs.html">Paragraphs</a>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title -active link-d8recipesstates" href="../../d8/recipes/states.html">#States</a>
+                      <ul class="headings heading-list">
+                        <li class="heading-item -depth-2"><a class="hlink link-simple-form-exmaple" href="#simple-form-exmaple">Simple Form exmaple</a>
+                        </li>
+                        <li class="heading-item -depth-2"><a class="hlink link-within-a-paragraph-bundle" href="#within-a-paragraph-bundle">Within a Paragraph bundle</a>
+                          <ul class="heading-list -depth-2">
+                            <li class="heading-item -depth-3"><a class="hlink link-useful-links" href="#useful-links">Useful Links</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-pantheon" href="../../pantheon/index.html">Pantheon</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-pantheonquicksilver" href="../../pantheon/quicksilver.html">Quicksilver</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Composer workflow</span>
+            </li>
+            <li class="menu-item -level-1"><a class="link title  link-pms" href="../../pms.html">What PM's Need to know</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Custom Modules/Repos</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-create-custom-repos" href="../../create-custom-repos.html">How to Create Custom Managed Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-use-custom-repos" href="../../use-custom-repos.html">How to Use Custom Managed Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-manage-custom-repos" href="../../manage-custom-repos.html">How to Manage Custom Modules</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">[NEED PAGE] Drupal vs Wordpress</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">[NEED PAGE] For Clients</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Other stuff we want to talk about...</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-d8recipesstates">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/bluecadet/drupal-docs" data-title="bluecadet/drupal-docs">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="states">States</h1>
+<blockquote>
+<p>A &quot;state&quot; means a certain property on a DOM element, such as &quot;visible&quot; or &quot;checked&quot;. A state can be applied to an element, depending on the state of another element on the page. In general, states depend on HTML attributes and DOM element properties, which change due to user interaction.</p>
+</blockquote>
+<blockquote>
+<p>Since states are driven by JavaScript only, it is important to understand that all states are applied on presentation only, none of the states force any server-side logic, and that they will not be applied for site visitors without JavaScript support. All modules implementing states have to make sure that the intended logic also works without JavaScript being enabled.</p>
+</blockquote>
+<h2 id="simple-form-exmaple">Simple Form exmaple</h2>
+<pre><code class="lang-php"><span class="pl-c">/**
+ * Implements hook_form_alter().
+ */</span>
+<span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">HOOK_form_alter</span><span class="hljs-params">(&amp;$form, FormStateInterface $form_state, $form_id)</span> </span>{
+  <span class="pl-k">switch</span> ($form_id) {
+    <span class="pl-k">case</span> <span class="pl-s">&apos;node_[CONTENT TYPE]_edit_form&apos;</span>:
+    <span class="pl-k">case</span> <span class="pl-s">&apos;node_[CONTENT TYPE]_form&apos;</span>:
+      <span class="pl-c">// Visible for any option.</span>
+      $form[<span class="pl-s">&apos;[FIELD NAME]&apos;</span>][<span class="pl-s">&apos;#states&apos;</span>] = [
+        <span class="pl-s">&apos;invisible&apos;</span> =&gt; [
+          <span class="pl-s">&apos;:input[name=&quot;[REFERENCE FIELD]&quot;]&apos;</span> =&gt; [<span class="pl-s">&apos;value&apos;</span> =&gt; <span class="pl-s">&apos;_none&apos;</span>],
+        ],
+      ];
+    <span class="pl-k">break</span>;
+  }
+}
+
+</code></pre>
+<p>replace [CONTENT TYPE], [FIELD NAME], and [REFERENCE FIELD].</p>
+<h2 id="within-a-paragraph-bundle">Within a Paragraph bundle</h2>
+<pre><code class="lang-php"><span class="pl-c">/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ */</span>
+<span class="hljs-function"><span class="pl-k">function</span> <span class="pl-ent">HOOK_field_widget_entity_reference_paragraphs_form_alter</span><span class="hljs-params">(&amp;$element, FormStateInterface $form_state, $context)</span> </span>{
+  $field_definition = $context[<span class="pl-s">&apos;items&apos;</span>]-&gt;getFieldDefinition();
+  $paragraph_entity_reference_field_name = $field_definition-&gt;getName();
+
+  <span class="pl-k">if</span> ($paragraph_entity_reference_field_name == <span class="pl-s">&apos;[PARAGRAPH SOURCE FIELD]&apos;</span> ) {
+    $widget_state = \Drupal\Core\Field\WidgetBase::getWidgetState($element[<span class="pl-s">&apos;#field_parents&apos;</span>], $paragraph_entity_reference_field_name, $form_state);
+
+    $paragraph_instance = $widget_state[<span class="pl-s">&apos;paragraphs&apos;</span>][$element[<span class="pl-s">&apos;#delta&apos;</span>]][<span class="pl-s">&apos;entity&apos;</span>];
+    $paragraph_type = $paragraph_instance-&gt;bundle();
+
+    <span class="pl-k">if</span> ($paragraph_type == <span class="pl-s">&apos;[PARAGRAPH BUNDLE]&apos;</span> &amp;&amp; !<span class="pl-k">isset</span>($element[<span class="pl-s">&apos;preview&apos;</span>])) {
+
+      $dependee_field_name = <span class="pl-s">&apos;[DEPENDEE FIELD NAME]&apos;</span>;
+      $selector = sprintf(<span class="pl-s">&apos;select[name=&quot;%s[%d][subform][%s]&quot;]&apos;</span>, $paragraph_entity_reference_field_name, $element[<span class="pl-s">&apos;#delta&apos;</span>], $dependee_field_name);
+
+      <span class="pl-c">// Dependent fields.</span>
+      $element[<span class="pl-s">&apos;subform&apos;</span>][<span class="pl-s">&apos;[FIELD NAME]&apos;</span>][<span class="pl-s">&apos;#states&apos;</span>] = [
+        <span class="pl-s">&apos;invisible&apos;</span> =&gt; [
+          $selector =&gt; [<span class="pl-s">&apos;value&apos;</span> =&gt; <span class="hljs-number">2</span>],
+       ],
+      ];
+
+    }
+  }
+}
+
+</code></pre>
+<p>replace [PARAGRAPH SOURCE FIELD], [PARAGRAPH BUNDLE], [DEPENDEE FIELD NAME], and [FIELD NAME].</p>
+<hr>
+<h3 id="useful-links">Useful Links</h3>
+<ul>
+<li><a href="https://api.drupal.org/api/drupal/core%21includes%21common.inc/function/drupal_process_states/8.2.x">Drupal States</a></li>
+<li><a href="https://www.drupal.org/project/conditional_fields">Conditional Fields module</a></li>
+<li><a href="https://www.lullabot.com/articles/form-api-states">Lullabot</a></li>
+<li><a href="https://gist.github.com/dinarcon/ea67da074fca0c19c25b85e244262219">Paragraphs Example</a></li>
+</ul>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../../d8/recipes/paragraphs.html"><span class="title">Paragraphs</span></a></div>
+          <div class="right"><a href="../../pantheon/index.html"><span class="label">Next: </span><span class="title">Pantheon</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
