@@ -10,16 +10,23 @@ This method allows for a full composer workflow, and the ability to add continuo
 
 Details pulled from: https://pantheon.io/docs/guides/build-tools/
 
-1. Create a Github personal access token
-1. Create CircleCI personal API token
-1. Run terminus command:
+Foolow directions at pantheon's link above.
+
+#### Things to note:
+
+* Create a Github personal access token
+* Create CircleCI personal API token
+* Run terminus command:
   <br>`terminus build-env:create-project --team="Bluecadet" --org="bluecadet" [PROJECT NAME]`
   make sure to include team and org, otherwise projects will be saved to your personal accounts
-1. The site is now ready to be worked on
+* When creating a local environment, if you are using apache, there will not b an `.htaccess` file. You'll need to grab it from another repo.
+
+
+<!-- 1. The site is now ready to be worked on
 1. Add team members to Pantheon account
 1. Add team members to github repo
 1. [Optionally: Setup TEST and LIVE environments on pantheon. Sometimes we wait to do this until a later stage]
-1. Setup backups for the site. If this is a sandbox (unpaid) site, you will need to do this through a terminus command [LINK]
+1. Setup backups for the site. If this is a sandbox (unpaid) site, you will need to do this through a terminus command [LINK] -->
 
 <hr>
 
