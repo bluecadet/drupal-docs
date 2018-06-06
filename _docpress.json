@@ -70,6 +70,18 @@
             ]
           },
           {
+            "title": "Pre-Project Planning",
+            "source": "docs/d8/pre-project.md",
+            "url": "d8/pre-project.html",
+            "slug": "d8pre-project"
+          },
+          {
+            "title": "Pre-Launch Planning",
+            "source": "docs/d8/pre-launch.md",
+            "url": "d8/pre-launch.html",
+            "slug": "d8pre-launch"
+          },
+          {
             "title": "Custom Modules/Themes",
             "source": "docs/d8/custom-modules.md",
             "url": "d8/custom-modules.html",
@@ -398,6 +410,18 @@
         }
       ]
     },
+    "d8/pre-project.html": {
+      "source": "docs/d8/pre-project.md",
+      "title": "Pre-Project Planning - Drupal Docs",
+      "pageTitle": "Pre-Project Planning",
+      "slug": "d8pre-project"
+    },
+    "d8/pre-launch.html": {
+      "source": "docs/d8/pre-launch.md",
+      "title": "Pre-Launch Planning - Drupal Docs",
+      "pageTitle": "Pre-Launch Planning",
+      "slug": "d8pre-launch"
+    },
     "d8/custom-modules.html": {
       "source": "docs/d8/custom-modules.md",
       "title": "Custom Modules/Themes - Drupal Docs",
@@ -636,6 +660,8 @@
     "docs/d7/install.md": "d7/install.html",
     "docs/d8/README.md": "d8/index.html",
     "docs/d8/install.md": "d8/install.html",
+    "docs/d8/pre-project.md": "d8/pre-project.html",
+    "docs/d8/pre-launch.md": "d8/pre-launch.html",
     "docs/d8/custom-modules.md": "d8/custom-modules.html",
     "docs/d8/custom-module-examples.md": "d8/custom-module-examples.html",
     "docs/d8/media.md": "d8/media.html",
@@ -651,7 +677,7 @@
     "docs/main.css": "main.css",
     "docs/scripts.js": "scripts.js",
     "docs/img/bc_logo.png": "img/bc_logo.png",
-    "docs/img/para_settings.png": "img/para_settings.png",
-    "docs/img/para_example.jpg": "img/para_example.jpg"
+    "docs/img/para_example.jpg": "img/para_example.jpg",
+    "docs/img/para_settings.png": "img/para_settings.png"
   }
 }
