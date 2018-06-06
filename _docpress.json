@@ -288,7 +288,14 @@
         "title": "What PM's Need to know",
         "source": "docs/pms.md",
         "url": "pms.html",
-        "slug": "pms"
+        "slug": "pms",
+        "headings": [
+          {
+            "title": "Considerations for CMS driving interactives:",
+            "depth": 2,
+            "id": "considerations-for-cms-driving-interactives:"
+          }
+        ]
       },
       {
         "title": "Custom Modules/Repos",
@@ -595,7 +602,14 @@
       "source": "docs/pms.md",
       "title": "What PM's Need to know - Drupal Docs",
       "pageTitle": "What PM's Need to know",
-      "slug": "pms"
+      "slug": "pms",
+      "headings": [
+        {
+          "title": "Considerations for CMS driving interactives:",
+          "depth": 2,
+          "id": "considerations-for-cms-driving-interactives:"
+        }
+      ]
     },
     "create-custom-repos.html": {
       "source": "docs/create-custom-repos.md",
@@ -637,7 +651,7 @@
     "docs/main.css": "main.css",
     "docs/scripts.js": "scripts.js",
     "docs/img/bc_logo.png": "img/bc_logo.png",
-    "docs/img/para_example.jpg": "img/para_example.jpg",
-    "docs/img/para_settings.png": "img/para_settings.png"
+    "docs/img/para_settings.png": "img/para_settings.png",
+    "docs/img/para_example.jpg": "img/para_example.jpg"
   }
 }
