@@ -10,6 +10,8 @@ This method allows for a full composer workflow, and the ability to add continuo
 
 Details pulled from: https://pantheon.io/docs/guides/build-tools/
 
+https://github.com/pantheon-systems/terminus-build-tools-plugin
+
 Foolow directions at pantheon's link above.
 
 #### Things to note:
@@ -17,8 +19,9 @@ Foolow directions at pantheon's link above.
 * Create a Github personal access token
 * Create CircleCI personal API token
 * Run terminus command:
-  <br>`terminus build-env:create-project --team="Bluecadet" --org="bluecadet" [PROJECT NAME]`
-  make sure to include team and org, otherwise projects will be saved to your personal accounts
+  <br>`terminus build:project:create --team="Bluecadet" --org="bluecadet" --email="pinge@bluecadet.com" --admin-email="pinge@bluecadet.com" d8 philly-pwa`
+  make sure to include team and org, otherwise projects will be saved to your personal accounts.
+* Once the environemnts are created, goto circleci.com, under the project settings, goto Advanced Settings -> Only build pull requests and check ON. This will reduce uneeded builds and save time during development.
 * When creating a local environment, if you are using apache, there will not b an `.htaccess` file. You'll need to grab it from another repo.
 
 
