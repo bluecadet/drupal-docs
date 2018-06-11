@@ -110,14 +110,16 @@
 <h3 id="composer-workflowcontinuous-integration.">Composer Workflow/Continuous integration.</h3>
 <p>This method allows for a full composer workflow, and the ability to add continuos integration tools to your project workflow.</p>
 <p>Details pulled from: <a href="https://pantheon.io/docs/guides/build-tools/">https://pantheon.io/docs/guides/build-tools/</a></p>
+<p><a href="https://github.com/pantheon-systems/terminus-build-tools-plugin">https://github.com/pantheon-systems/terminus-build-tools-plugin</a></p>
 <p>Foolow directions at pantheon&apos;s link above.</p>
 <h4 id="things-to-note:">Things to note:</h4>
 <ul>
 <li>Create a Github personal access token</li>
 <li>Create CircleCI personal API token</li>
 <li>Run terminus command:
-<br><code>terminus build-env:create-project --team=&quot;Bluecadet&quot; --org=&quot;bluecadet&quot; [PROJECT NAME]</code>
-make sure to include team and org, otherwise projects will be saved to your personal accounts</li>
+<br><code>terminus build:project:create --team=&quot;Bluecadet&quot; --org=&quot;bluecadet&quot; --email=&quot;pinge@bluecadet.com&quot; --admin-email=&quot;pinge@bluecadet.com&quot; d8 philly-pwa</code>
+make sure to include team and org, otherwise projects will be saved to your personal accounts.</li>
+<li>Once the environemnts are created, goto <a href="http://circleci.com">circleci.com</a>, under the project settings, goto Advanced Settings -&gt; Only build pull requests and check ON. This will reduce uneeded builds and save time during development.</li>
 <li>When creating a local environment, if you are using apache, there will not b an <code>.htaccess</code> file. You&apos;ll need to grab it from another repo.</li>
 </ul>
 <!-- 1. The site is now ready to be worked on

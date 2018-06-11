@@ -73,7 +73,19 @@
             "title": "Pre-Project Planning",
             "source": "docs/d8/pre-project.md",
             "url": "d8/pre-project.html",
-            "slug": "d8pre-project"
+            "slug": "d8pre-project",
+            "headings": [
+              {
+                "title": "Things to think about",
+                "depth": 2,
+                "id": "things-to-think-about"
+              },
+              {
+                "title": "Things to do",
+                "depth": 2,
+                "id": "things-to-do"
+              }
+            ]
           },
           {
             "title": "Pre-Launch Planning",
@@ -414,7 +426,19 @@
       "source": "docs/d8/pre-project.md",
       "title": "Pre-Project Planning - Drupal Docs",
       "pageTitle": "Pre-Project Planning",
-      "slug": "d8pre-project"
+      "slug": "d8pre-project",
+      "headings": [
+        {
+          "title": "Things to think about",
+          "depth": 2,
+          "id": "things-to-think-about"
+        },
+        {
+          "title": "Things to do",
+          "depth": 2,
+          "id": "things-to-do"
+        }
+      ]
     },
     "d8/pre-launch.html": {
       "source": "docs/d8/pre-launch.md",

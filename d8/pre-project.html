@@ -28,6 +28,12 @@
                 <li class="menu-item -level-2"><a class="link title  link-d8install" href="../d8/install.html">Installation</a>
                 </li>
                 <li class="menu-item -level-2"><a class="link title -active link-d8pre-project" href="../d8/pre-project.html">Pre-Project Planning</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-things-to-think-about" href="#things-to-think-about">Things to think about</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-things-to-do" href="#things-to-do">Things to do</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="menu-item -level-2"><a class="link title  link-d8pre-launch" href="../d8/pre-launch.html">Pre-Launch Planning</a>
                 </li>
@@ -86,8 +92,49 @@
               <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
           </div>
         </div>
-        <div class="markdown-body"><p>GRAB STUFF FROM PANTHEON QUARTLY REPORT</p>
+        <div class="markdown-body"><p>#Pre-project Thoughts and Considerations</p>
+<p>GRAB STUFF FROM PANTHEON QUARTLY REPORT</p>
 <p>GRAB STUFF FROM OUR PRE-LAUNCH CHECKLIST</p>
+<h2 id="things-to-think-about">Things to think about</h2>
+<ul>
+<li>Meta-tags:
+<ul>
+<li>Where is the info coming from?</li>
+<li>Is automatically populated from fields, fallback or does the user have to enter everyrthing?</li>
+<li>Do you need custom tokens to get the data you need?</li>
+</ul>
+</li>
+<li>Sitemap:</li>
+<li>Redirects:
+<ul>
+<li>How will redirects be handeled?</li>
+</ul>
+</li>
+<li>Domains:
+<ul>
+<li>Will you be forcing https (YES)?</li>
+<li>Will you be using www. or just the bare domain?</li>
+</ul>
+</li>
+</ul>
+<h2 id="things-to-do">Things to do</h2>
+<ul>
+<li>If you are on Pantheon:
+<ul>
+<li>Enable New Relic</li>
+<li>Set settings for New Relic</li>
+<li>Enable New Relic Module (<a href="https://www.drupal.org/project/new_relic_rpm">https://www.drupal.org/project/new_relic_rpm</a>)</li>
+<li>Enable Pantheon Advanced Page Cache module (<a href="https://www.drupal.org/project/pantheon_advanced_page_cache">https://www.drupal.org/project/pantheon_advanced_page_cache</a>)</li>
+<li>Setup Quicksilver
+<ul>
+<li>At the very least set it up to notify New Relic of pushes</li>
+<li>(Optional) Set it up to auto import config</li>
+<li>(Optional) Set it up to notify Slack</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
         </div>
         <div class="footer-nav">
