@@ -66,6 +66,23 @@
                     "id": "with-lando"
                   }
                 ]
+              },
+              {
+                "title": "Pantheon, CircleCI, and Lando",
+                "depth": 2,
+                "id": "pantheon-circleci-and-lando",
+                "headings": [
+                  {
+                    "title": "Prerequisites",
+                    "depth": 3,
+                    "id": "prerequisites"
+                  },
+                  {
+                    "title": "Recipe",
+                    "depth": 3,
+                    "id": "recipe"
+                  }
+                ]
               }
             ]
           },
@@ -417,6 +434,23 @@
               "title": "With Lando",
               "depth": 3,
               "id": "with-lando"
+            }
+          ]
+        },
+        {
+          "title": "Pantheon, CircleCI, and Lando",
+          "depth": 2,
+          "id": "pantheon-circleci-and-lando",
+          "headings": [
+            {
+              "title": "Prerequisites",
+              "depth": 3,
+              "id": "prerequisites"
+            },
+            {
+              "title": "Recipe",
+              "depth": 3,
+              "id": "recipe"
             }
           ]
         }

@@ -43,6 +43,14 @@
                         </li>
                       </ul>
                     </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-pantheon-circleci-and-lando" href="#pantheon-circleci-and-lando">Pantheon, CircleCI, and Lando</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-prerequisites" href="#prerequisites">Prerequisites</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-recipe" href="#recipe">Recipe</a>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
                 <li class="menu-item -level-2"><a class="link title  link-d8pre-project" href="../d8/pre-project.html">Pre-Project Planning</a>
@@ -111,7 +119,7 @@
 <p>This method allows for a full composer workflow, and the ability to add continuos integration tools to your project workflow.</p>
 <p>Details pulled from: <a href="https://pantheon.io/docs/guides/build-tools/">https://pantheon.io/docs/guides/build-tools/</a></p>
 <p><a href="https://github.com/pantheon-systems/terminus-build-tools-plugin">https://github.com/pantheon-systems/terminus-build-tools-plugin</a></p>
-<p>Foolow directions at pantheon&apos;s link above.</p>
+<p>Follow directions at pantheon&apos;s link above.</p>
 <h4 id="things-to-note:">Things to note:</h4>
 <ul>
 <li>Create a Github personal access token</li>
@@ -204,6 +212,24 @@ $settings[&apos;trusted_host_patterns&apos;][] = &apos;^localhost.com$&apos;;
 <p>When using Lando, all <code>terminus</code> commands should be prepended with <code>lando</code>, i.e:</p>
 <pre><code>lando terminus drush cim
 </code></pre>
+<h2 id="pantheon-circleci-and-lando">Pantheon, CircleCI, and Lando</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li><a href="https://getcomposer.org">composer</a></li>
+<li><a href="https://docs.devwithlando.io">lando</a></li>
+<li><a href="https://github.com/pantheon-systems/terminus">terminus</a> with <a href="https://pantheon.io/docs/machine-tokens/">machine token</a></li>
+</ul>
+<h3 id="recipe">Recipe</h3>
+<ul>
+<li>Pull repo from github <code>git clone [repo]</code></li>
+<li>In your terminal, go to your repo directory and run <code>composer install</code></li>
+<li>In your terminal, run <code>lando init --recipe=pantheon</code> to bind to a Pantheon instance</li>
+<li>Open up the repo in your text editor. Modify <strong>.lando.yml</strong> to enable debugging: Add line with <code>xdebug: true</code></li>
+<li>In your text editor, check that <strong>pantheon.yml</strong> has a nested webroot specified: <code>web_docroot: true</code></li>
+<li>In your text editor, check that <strong>pantheon.yml</strong> has PHP version set to 7.0 (default 7.2 produces errors as of lando * version v3.0.0-beta.47): <code>php_version: 7.0</code></li>
+<li>In your terminal, run <code>lando start</code></li>
+<li>In your terminal, do a pull for the database and files: <code>lando pull --code=none --database=dev * --files=dev</code></li>
+</ul>
 
         </div>
         <div class="footer-nav">
