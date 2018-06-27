@@ -122,7 +122,7 @@ lando terminus drush cim
 ### Recipe
 
 * Pull repo from github `git clone [repo]`
-* In your terminal, run `composer install`
+* In your terminal, go to your repo directory and run `composer install`
 * In your terminal, run `lando init --recipe=pantheon` to bind to a Pantheon instance
 * Open up the repo in your text editor. Modify **.lando.yml** to enable debugging: Add line with `xdebug: true`
 * In your text editor, check that **pantheon.yml** has a nested webroot specified: `web_docroot: true`
