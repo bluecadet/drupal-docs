@@ -12,7 +12,7 @@ Details pulled from: https://pantheon.io/docs/guides/build-tools/
 
 https://github.com/pantheon-systems/terminus-build-tools-plugin
 
-Foolow directions at pantheon's link above.
+Follow directions at pantheon's link above.
 
 #### Things to note:
 
@@ -31,7 +31,7 @@ Foolow directions at pantheon's link above.
 1. [Optionally: Setup TEST and LIVE environments on pantheon. Sometimes we wait to do this until a later stage]
 1. Setup backups for the site. If this is a sandbox (unpaid) site, you will need to do this through a terminus command [LINK] -->
 
-<hr>
+---
 
 ## Setting Up local environment
 
@@ -110,3 +110,22 @@ When using Lando, all `terminus` commands should be prepended with `lando`, i.e:
 ```
 lando terminus drush cim
 ```
+
+## Pantheon, CircleCI, and Lando
+
+### Prerequisites
+
+* [composer](https://getcomposer.org)
+* [lando](https://docs.devwithlando.io)
+* [terminus](https://github.com/pantheon-systems/terminus) with [machine token](https://pantheon.io/docs/machine-tokens/)
+
+### Recipe
+
+* Pull repo from github `git clone [repo]`
+* In your terminal, run `composer install`
+* In your terminal, run `lando init --recipe=pantheon` to bind to a Pantheon instance
+* Open up the repo in your text editor. Modify **.lando.yml** to enable debugging: Add line with `xdebug: true`
+* In your text editor, check that **pantheon.yml** has a nested webroot specified: `web_docroot: true`
+* In your text editor, check that **pantheon.yml** has PHP version set to 7.0 (default 7.2 produces errors as of lando * version v3.0.0-beta.47): `php_version: 7.0`
+* In your terminal, run `lando start`
+* In your terminal, do a pull for the database and files: `lando pull --code=none --database=dev * --files=dev`
