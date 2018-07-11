@@ -337,6 +337,56 @@
                 ]
               }
             ]
+          },
+          {
+            "title": "Notes:",
+            "sections": [
+              {
+                "title": "THF install Notes",
+                "source": "docs/d8/notes/thf_install_notes.md",
+                "url": "d8/notes/thf_install_notes.html",
+                "slug": "d8notesthf_install_notes",
+                "headings": [
+                  {
+                    "title": "Auto config-import & New Relic notifications",
+                    "depth": 2,
+                    "id": "auto-config-import-and-new-relic-notifications"
+                  },
+                  {
+                    "title": "Starter modules",
+                    "depth": 2,
+                    "id": "starter-modules",
+                    "headings": [
+                      {
+                        "title": "All Sites",
+                        "depth": 3,
+                        "id": "all-sites"
+                      },
+                      {
+                        "title": "Web only",
+                        "depth": 3,
+                        "id": "web-only"
+                      },
+                      {
+                        "title": "Some other useful ones",
+                        "depth": 3,
+                        "id": "some-other-useful-ones"
+                      },
+                      {
+                        "title": "Turn on a few we normally use",
+                        "depth": 3,
+                        "id": "turn-on-a-few-we-normally-use"
+                      },
+                      {
+                        "title": "Turn off a few modules we don’t normally use",
+                        "depth": 3,
+                        "id": "turn-off-a-few-modules-we-don't-normally-use"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -732,6 +782,51 @@
         }
       ]
     },
+    "d8/notes/thf_install_notes.html": {
+      "source": "docs/d8/notes/thf_install_notes.md",
+      "title": "THF install Notes - Drupal Docs",
+      "pageTitle": "THF install Notes",
+      "slug": "d8notesthf_install_notes",
+      "headings": [
+        {
+          "title": "Auto config-import & New Relic notifications",
+          "depth": 2,
+          "id": "auto-config-import-and-new-relic-notifications"
+        },
+        {
+          "title": "Starter modules",
+          "depth": 2,
+          "id": "starter-modules",
+          "headings": [
+            {
+              "title": "All Sites",
+              "depth": 3,
+              "id": "all-sites"
+            },
+            {
+              "title": "Web only",
+              "depth": 3,
+              "id": "web-only"
+            },
+            {
+              "title": "Some other useful ones",
+              "depth": 3,
+              "id": "some-other-useful-ones"
+            },
+            {
+              "title": "Turn on a few we normally use",
+              "depth": 3,
+              "id": "turn-on-a-few-we-normally-use"
+            },
+            {
+              "title": "Turn off a few modules we don’t normally use",
+              "depth": 3,
+              "id": "turn-off-a-few-modules-we-don't-normally-use"
+            }
+          ]
+        }
+      ]
+    },
     "pantheon/index.html": {
       "source": "docs/pantheon/README.md",
       "title": "Pantheon - Drupal Docs",
@@ -790,6 +885,7 @@
     "docs/d8/recipes/ckeditor.md": "d8/recipes/ckeditor.html",
     "docs/d8/recipes/paragraphs.md": "d8/recipes/paragraphs.html",
     "docs/d8/recipes/states.md": "d8/recipes/states.html",
+    "docs/d8/notes/thf_install_notes.md": "d8/notes/thf_install_notes.html",
     "docs/pantheon/README.md": "pantheon/index.html",
     "docs/pantheon/quicksilver.md": "pantheon/quicksilver.html",
     "docs/pms.md": "pms.html",

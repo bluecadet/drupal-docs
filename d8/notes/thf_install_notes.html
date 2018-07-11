@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="../../main.css?t=734caa58">
+    <script src="../../assets/script.js?t=36f3d457"></script>
+    <script src="../../scripts.js?t=56b80ffb"></script>
+    <title>THF install Notes - Drupal Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../../index.html">Drupal Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-d7" href="../../d7/index.html">D7</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-d7install" href="../../d7/install.html">Installation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-d8" href="../../d8/index.html">D8</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-d8install" href="../../d8/install.html">Installation</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8pre-project" href="../../d8/pre-project.html">Pre-Project Planning</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8pre-launch" href="../../d8/pre-launch.html">Pre-Launch Planning</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8custom-modules" href="../../d8/custom-modules.html">Custom Modules/Themes</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8custom-module-examples" href="../../d8/custom-module-examples.html">Custom Module/Theme Examples</a>
+                </li>
+                <li class="menu-item -level-2 -parent"><span class="title">Recipes</span>
+                  <ul class="submenu">
+                    <li class="menu-item -level-3"><a class="link title  link-d8media" href="../../d8/media.html">Media Entity Setup</a>
+                    </li>
+                    <li class="menu-item -level-3"><span class="title">[NEED PAGE] WYSIWYG Setup</span>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title  link-d8recipesckeditor" href="../../d8/recipes/ckeditor.html">CKEditor Plugins</a>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title  link-d8recipesparagraphs" href="../../d8/recipes/paragraphs.html">Paragraphs</a>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title  link-d8recipesstates" href="../../d8/recipes/states.html">#States</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2 -parent"><span class="title">Notes:</span>
+                  <ul class="submenu">
+                    <li class="menu-item -level-3"><a class="link title -active link-d8notesthf_install_notes" href="../../d8/notes/thf_install_notes.html">THF install Notes</a>
+                      <ul class="headings heading-list">
+                        <li class="heading-item -depth-2"><a class="hlink link-auto-config-import-and-new-relic-notifications" href="#auto-config-import-and-new-relic-notifications">Auto config-import &amp; New Relic notifications</a>
+                        </li>
+                        <li class="heading-item -depth-2"><a class="hlink link-starter-modules" href="#starter-modules">Starter modules</a>
+                          <ul class="heading-list -depth-2">
+                            <li class="heading-item -depth-3"><a class="hlink link-all-sites" href="#all-sites">All Sites</a>
+                            </li>
+                            <li class="heading-item -depth-3"><a class="hlink link-web-only" href="#web-only">Web only</a>
+                            </li>
+                            <li class="heading-item -depth-3"><a class="hlink link-some-other-useful-ones" href="#some-other-useful-ones">Some other useful ones</a>
+                            </li>
+                            <li class="heading-item -depth-3"><a class="hlink link-turn-on-a-few-we-normally-use" href="#turn-on-a-few-we-normally-use">Turn on a few we normally use</a>
+                            </li>
+                            <li class="heading-item -depth-3"><a class="hlink link-turn-off-a-few-modules-we-don't-normally-use" href="#turn-off-a-few-modules-we-don't-normally-use">Turn off a few modules we don’t normally use</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-pantheon" href="../../pantheon/index.html">Pantheon</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-pantheonquicksilver" href="../../pantheon/quicksilver.html">Quicksilver</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Composer workflow</span>
+            </li>
+            <li class="menu-item -level-1"><a class="link title  link-pms" href="../../pms.html">What PM's Need to know</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Custom Modules/Repos</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-create-custom-repos" href="../../create-custom-repos.html">How to Create Custom Managed Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-use-custom-repos" href="../../use-custom-repos.html">How to Use Custom Managed Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-manage-custom-repos" href="../../manage-custom-repos.html">How to Manage Custom Modules</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">[NEED PAGE] Drupal vs Wordpress</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">[NEED PAGE] For Clients</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Other stuff we want to talk about...</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-d8notesthf_install_notes">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/bluecadet/drupal-docs" data-title="bluecadet/drupal-docs">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="setting-up-thf-cms">Setting Up THF cms</h1>
+<p>#THF</p>
+<ul>
+<li>ran <code>terminus build:project:create --team=&quot;Bluecadet&quot; --org=&quot;bluecadet&quot; --email=&quot;pinge@bluecadet.com&quot; --admin-email=&quot;pinge@bluecadet.com&quot; d8 thf-cms</code></li>
+<li>Cloned github <code>git clone git@github.com:bluecadet/thf-cms.git</code></li>
+<li>ran <code>composer install</code></li>
+<li>ran  <code>lando init --recipe=pantheon</code></li>
+<li>add .lando.yml to .gitignore</li>
+<li>add <code>debug: true</code> to .land.yml</li>
+<li>added to .land.yml</li>
+</ul>
+<pre><code>services:
+  appserver:
+    run_as_root:
+      - &quot;apt-get update&quot;
+      - &quot;apt-get install libgmp3-dev&quot;
+      - &quot;docker-php-ext-install gmp
+</code></pre>
+<ul>
+<li>changed php to 7.1 in pantheon.yml file</li>
+<li>ran <code>lando start</code></li>
+<li>ran <code>lando pull --code=none --database=dev --files=dev</code></li>
+</ul>
+<p>GOOD TO GO!</p>
+<ul>
+<li>
+<p>turned off behat tests in .circleci/config.yml</p>
+</li>
+<li>
+<p>Changed Circle config -&gt;advanced settings to &#x2018;Only build pull requests&#x2019; to &#x2018;On&#x2019;</p>
+</li>
+<li>
+<p>added settings.local.php</p>
+</li>
+</ul>
+<pre><code>&lt;?php
+
+/**
+ * Enable local development services.
+ */
+$settings[&apos;container_yamls&apos;][] = DRUPAL_ROOT . &apos;/sites/development.services.yml&apos;;
+$settings[&apos;container_yamls&apos;][] = DRUPAL_ROOT . &apos;/sites/development.services.local.yml&apos;;
+
+/**
+ * Show all error messages, with backtrace information.
+ *
+ * In case the error level could not be fetched from the database, as for
+ * example the database connection failed, we rely only on this value.
+ */
+$config[&apos;system.logging&apos;][&apos;error_level&apos;] = &apos;verbose&apos;;
+
+/**
+ * Disable CSS and JS aggregation.
+ */
+$config[&apos;system.performance&apos;][&apos;css&apos;][&apos;preprocess&apos;] = FALSE;
+$config[&apos;system.performance&apos;][&apos;js&apos;][&apos;preprocess&apos;] = FALSE;
+
+/**
+ * Disable the render cache (this includes the page cache).
+ *
+ * Note: you should test with the render cache enabled, to ensure the correct
+ * cacheability metadata is present. However, in the early stages of
+ * development, you may want to disable it.
+ *
+ * This setting disables the render cache by using the Null cache back-end
+ * defined by the development.services.yml file above.
+ *
+ * Do not use this setting until after the site is installed.
+ */
+$settings[&apos;cache&apos;][&apos;bins&apos;][&apos;render&apos;] = &apos;cache.backend.null&apos;;
+
+/**
+ * Disable caching for migrations.
+ *
+ * Uncomment the code below to only store migrations in memory and not in the
+ * database. This makes it easier to develop custom migrations.
+ */
+# $settings[&apos;cache&apos;][&apos;bins&apos;][&apos;discovery_migration&apos;] = &apos;cache.backend.memory&apos;;
+
+/**
+ * Disable Internal Page Cache.
+ *
+ * Note: you should test with Internal Page Cache enabled, to ensure the correct
+ * cacheability metadata is present. However, in the early stages of
+ * development, you may want to disable it.
+ *
+ * This setting disables the page cache by using the Null cache back-end
+ * defined by the development.services.yml file above.
+ *
+ * Only use this setting once the site has been installed.
+ */
+$settings[&apos;cache&apos;][&apos;bins&apos;][&apos;page&apos;] = &apos;cache.backend.null&apos;;
+
+/**
+ * Disable Dynamic Page Cache.
+ *
+ * Note: you should test with Dynamic Page Cache enabled, to ensure the correct
+ * cacheability metadata is present (and hence the expected behavior). However,
+ * in the early stages of development, you may want to disable it.
+ */
+$settings[&apos;cache&apos;][&apos;bins&apos;][&apos;dynamic_page_cache&apos;] = &apos;cache.backend.null&apos;;
+
+/**
+ * Allow test modules and themes to be installed.
+ *
+ * Drupal ignores test modules and themes by default for performance reasons.
+ * During development it can be useful to install test extensions for debugging
+ * purposes.
+ */
+$settings[&apos;extension_discovery_scan_tests&apos;] = TRUE;
+
+/**
+ * Enable access to rebuild.php.
+ *
+ * This setting can be enabled to allow Drupal&apos;s php and database cached
+ * storage to be cleared via the rebuild.php page. Access to this page can also
+ * be gained by generating a query string from rebuild_token_calculator.sh and
+ * using these parameters in a request to rebuild.php.
+ */
+$settings[&apos;rebuild_access&apos;] = TRUE;
+
+/**
+ * Skip file system permissions hardening.
+ *
+ * The system module will periodically check the permissions of your site&apos;s
+ * site directory to ensure that it is not writable by the website user. For
+ * sites that are managed with a version control system, this can cause problems
+ * when files in that directory such as settings.php are updated, because the
+ * user pulling in the changes won&apos;t have permissions to modify files in the
+ * directory.
+ */
+$settings[&apos;skip_permissions_hardening&apos;] = TRUE;
+
+$settings[&apos;trusted_host_patterns&apos;][] = &apos;^.+.localhost.com$&apos;;
+$settings[&apos;trusted_host_patterns&apos;][] = &apos;^localhost.com$&apos;;
+$settings[&apos;trusted_host_patterns&apos;][] = &apos;^.+.lndo.site$&apos;;
+
+/**
+ * Error Logging
+ */
+$config[&apos;system.logging&apos;][&apos;error_level&apos;] = &apos;verbose&apos;;
+
+/**
+ * Disable CSS and JS aggregation.
+ */
+$config[&apos;system.performance&apos;][&apos;css&apos;][&apos;preprocess&apos;] = FALSE;
+$config[&apos;system.performance&apos;][&apos;js&apos;][&apos;preprocess&apos;] = FALSE;
+
+/**
+ * Disable page caching
+ */
+$config[&apos;system.performance&apos;][&apos;cache&apos;][&apos;page&apos;][&apos;max_age&apos;] = 0;
+</code></pre>
+<ul>
+<li>added development.services.local.yml</li>
+</ul>
+<pre><code># Local development services.
+#
+# To activate this feature, follow the instructions at the top of the
+# &apos;example.settings.local.php&apos; file, which sits next to this file.
+parameters:
+  http.response.debug_cacheability_headers: true
+  twig.config:
+    debug: true
+    auto_reload: true
+    cache: false
+services:
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
+</code></pre>
+<ul>
+<li>added development.services.local.yml to git ignore</li>
+</ul>
+<h2 id="auto-config-import-and-new-relic-notifications">Auto config-import &amp; New Relic notifications</h2>
+<ul>
+<li>Make sure New Relic is enabled</li>
+<li>Added 2 files to <code>./private</code> folder for auto import and new relic notification
+<ul>
+<li>drush_config_import.php</li>
+<li>new_relic_deploy.php</li>
+</ul>
+</li>
+<li>Update pantheon.yml</li>
+</ul>
+<pre><code>
+  sync_code:              #push code to DEV/MULTI-DEV
+    after:
+      -
+        type: webphp
+        description: Import configuration from .yml files
+        script: private/drush_config_import.php
+      -
+        type: webphp
+        description: Log to New Relic
+        script: private/new_relic_deploy.php
+
+  deploy:                 #push code to TEST/LIVE
+    after:
+      -
+        type: webphp
+        description: Import configuration from .yml files
+        script: private/drush_config_import.php
+      -
+        type: webphp
+        description: Log to New Relic
+        script: private/new_relic_deploy.php
+</code></pre>
+<h2 id="starter-modules">Starter modules</h2>
+<h3 id="all-sites">All Sites</h3>
+<p>admin_toolbar
+config_devel
+config_split
+ctools
+devel
+diff
+focal_point
+hsts
+inline_entity_form
+new_relic_rpm
+pantheon_advanced_page_cache
+paragraphs
+redis</p>
+<pre><code>lando composer require drupal/admin_toolbar drupal/config_devel drupal/config_split drupal/ctools drupal/devel drupal/diff drupal/focal_point drupal/hsts  drupal/inline_entity_form drupal/new_relic_rpm drupal/pantheon_advanced_page_cache drupal/paragraphs drupal/redis
+
+cd web
+
+lando drush en admin_toolbar admin_toolbar_tools config_devel config_split ctools devel kint diff focal_point hsts inline_entity_form new_relic_rpm pantheon_advanced_page_cache paragraphs
+
+</code></pre>
+<p>NOTE: turn on Redis LATER!!</p>
+<h3 id="web-only">Web only</h3>
+<p>metatag
+pathauto
+redirect
+simple_sitemap
+token
+viewsreference</p>
+<pre><code>lando composer require drupal/metatag drupal/pathauto drupal/redirect drupal/token drupal/viewsreference
+
+cd web
+
+lando drush en metatag pathauto redirect token viewsreference
+
+</code></pre>
+<h3 id="some-other-useful-ones">Some other useful ones</h3>
+<p>ultimate_cron
+views_bulk_operations
+config_split
+devel_generate (submodule of devel)</p>
+<h3 id="turn-on-a-few-we-normally-use">Turn on a few we normally use</h3>
+<p>block_content
+media</p>
+<pre><code>lando drush en block_content media
+</code></pre>
+<h3 id="turn-off-a-few-modules-we-don&apos;t-normally-use">Turn off a few modules we don&#x2019;t normally use</h3>
+<p>big_pipe
+color
+comment
+help
+history
+quickedit
+rdf
+responsive_image
+tour</p>
+<pre><code>lando drush pmu big_pipe color comment help history quickedit rdf responsive_image tour
+
+</code></pre>
+<p>Note: delete comment field on Article before trying to run above command</p>
+<p>Export Config!!!</p>
+<p>ALL GOOD after CI!!!!</p>
+<ul>
+<li>Need to Setup theme</li>
+<li>Need to add Lighthouse tests</li>
+<li>Need to add Visual Regression Tests</li>
+</ul>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../../d8/recipes/states.html"><span class="title">#States</span></a></div>
+          <div class="right"><a href="../../pantheon/index.html"><span class="label">Next: </span><span class="title">Pantheon</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
