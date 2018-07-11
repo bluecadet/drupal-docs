@@ -83,6 +83,38 @@
                     "id": "recipe"
                   }
                 ]
+              },
+              {
+                "title": "Starter modules",
+                "depth": 2,
+                "id": "starter-modules",
+                "headings": [
+                  {
+                    "title": "All Sites",
+                    "depth": 3,
+                    "id": "all-sites"
+                  },
+                  {
+                    "title": "Web only",
+                    "depth": 3,
+                    "id": "web-only"
+                  },
+                  {
+                    "title": "Some other useful ones",
+                    "depth": 3,
+                    "id": "some-other-useful-ones"
+                  },
+                  {
+                    "title": "Turn on a few we normally use",
+                    "depth": 3,
+                    "id": "turn-on-a-few-we-normally-use"
+                  },
+                  {
+                    "title": "Turn off a few modules we don’t normally use",
+                    "depth": 3,
+                    "id": "turn-off-a-few-modules-we-don't-normally-use"
+                  }
+                ]
               }
             ]
           },
@@ -451,6 +483,38 @@
               "title": "Recipe",
               "depth": 3,
               "id": "recipe"
+            }
+          ]
+        },
+        {
+          "title": "Starter modules",
+          "depth": 2,
+          "id": "starter-modules",
+          "headings": [
+            {
+              "title": "All Sites",
+              "depth": 3,
+              "id": "all-sites"
+            },
+            {
+              "title": "Web only",
+              "depth": 3,
+              "id": "web-only"
+            },
+            {
+              "title": "Some other useful ones",
+              "depth": 3,
+              "id": "some-other-useful-ones"
+            },
+            {
+              "title": "Turn on a few we normally use",
+              "depth": 3,
+              "id": "turn-on-a-few-we-normally-use"
+            },
+            {
+              "title": "Turn off a few modules we don’t normally use",
+              "depth": 3,
+              "id": "turn-off-a-few-modules-we-don't-normally-use"
             }
           ]
         }
