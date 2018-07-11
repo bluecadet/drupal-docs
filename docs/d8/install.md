@@ -111,7 +111,6 @@ When using Lando, all `terminus` commands should be prepended with `lando`, i.e:
 lando terminus drush cim
 ```
 
-<<<<<<< HEAD
 ## Pantheon, CircleCI, and Lando
 
 ### Prerequisites
@@ -130,7 +129,6 @@ lando terminus drush cim
 * In your text editor, check that **pantheon.yml** has PHP version set to 7.0 (default 7.2 produces errors as of lando * version v3.0.0-beta.47): `php_version: 7.0`
 * In your terminal, run `lando start`
 * In your terminal, do a pull for the database and files: `lando pull --code=none --database=dev * --files=dev`
-=======
 
 
 
@@ -209,4 +207,3 @@ lando drush pmu big_pipe color comment help history quickedit rdf responsive_ima
 
 ```
 Note: delete comment field on Article before trying to run above command
->>>>>>> Add in modules suggestions
