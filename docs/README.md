@@ -6,6 +6,7 @@ Drupal Documentation
   * [Installation](d7/install.md)
 * [D8](d8/README.md)
   * [Installation](d8/install.md)
+  * [Setup](d8/setup.md)
   * [Pre-Project Planning](d8/pre-project.md)
   * [Pre-Launch Planning](d8/pre-launch.md)
   * [Custom Modules/Themes](d8/custom-modules.md)
