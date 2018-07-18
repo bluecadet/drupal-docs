@@ -19,6 +19,7 @@ Drupal Documentation
     * [#States](d8/recipes/states.md)
   * Notes:
     * [THF install Notes](d8/notes/thf_install_notes.md)
+    * [NHMLA install Notes](d8/notes/nhmla_install_notes.md)
 * [Pantheon](pantheon/README.md)
   * [Quicksilver](pantheon/quicksilver.md)
 * Composer workflow
