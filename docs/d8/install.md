@@ -22,7 +22,7 @@ Follow directions at pantheon's link above.
   <br>`terminus build:project:create --team="Bluecadet" --org="bluecadet" --email="pinge@bluecadet.com" --admin-email="pinge@bluecadet.com" d8 philly-pwa`
   make sure to include team and org, otherwise projects will be saved to your personal accounts.
 * Once the environemnts are created, goto circleci.com, under the project settings, goto Advanced Settings -> Only build pull requests and check ON. This will reduce uneeded builds and save time during development.
-* When creating a local environment, if you are using apache, there will not b an `.htaccess` file. You'll need to grab it from another repo.
+* When creating a local environment, if you are using apache, there will not be an `.htaccess` file at the root of the project. You will need to grab it from another repo OR from a clean download of Drupal from drupal.org.
 
 
 <!-- 1. The site is now ready to be worked on
@@ -128,7 +128,7 @@ lando terminus drush cim
 * In your text editor, check that **pantheon.yml** has a nested webroot specified: `web_docroot: true`
 * In your text editor, check that **pantheon.yml** has PHP version set to 7.0 (default 7.2 produces errors as of lando * version v3.0.0-beta.47): `php_version: 7.0`
 * In your terminal, run `lando start`
-* In your terminal, do a pull for the database and files: `lando pull --code=none --database=dev * --files=dev`
+* In your terminal, do a pull for the database and files: `lando pull --code=none --database=dev --files=dev`
 
 
 
