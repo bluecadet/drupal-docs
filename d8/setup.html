@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="../main.css?t=734caa58">
+    <script src="../assets/script.js?t=36f3d457"></script>
+    <script src="../scripts.js?t=56b80ffb"></script>
+    <title>Setup - Drupal Docs</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">Drupal Docs</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-d7" href="../d7/index.html">D7</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-d7install" href="../d7/install.html">Installation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-d8" href="../d8/index.html">D8</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-d8install" href="../d8/install.html">Installation</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-d8setup" href="../d8/setup.html">Setup</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-settings.local.php" href="#settings.local.php">settings.local.php</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-development.services.yml" href="#development.services.yml">development.services.yml</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8pre-project" href="../d8/pre-project.html">Pre-Project Planning</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8pre-launch" href="../d8/pre-launch.html">Pre-Launch Planning</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8custom-modules" href="../d8/custom-modules.html">Custom Modules/Themes</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-d8custom-module-examples" href="../d8/custom-module-examples.html">Custom Module/Theme Examples</a>
+                </li>
+                <li class="menu-item -level-2 -parent"><span class="title">Recipes</span>
+                  <ul class="submenu">
+                    <li class="menu-item -level-3"><a class="link title  link-d8media" href="../d8/media.html">Media Entity Setup</a>
+                    </li>
+                    <li class="menu-item -level-3"><span class="title">[NEED PAGE] WYSIWYG Setup</span>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title  link-d8recipesckeditor" href="../d8/recipes/ckeditor.html">CKEditor Plugins</a>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title  link-d8recipesparagraphs" href="../d8/recipes/paragraphs.html">Paragraphs</a>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title  link-d8recipesstates" href="../d8/recipes/states.html">#States</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2 -parent"><a class="link title  link-d8notes" href="../d8/notes.html">Notes:</a>
+                  <ul class="submenu">
+                    <li class="menu-item -level-3"><a class="link title  link-d8notesthf_install_notes" href="../d8/notes/thf_install_notes.html">THF install Notes</a>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title  link-d8notesnhmla_install_notes" href="../d8/notes/nhmla_install_notes.html">NHMLA install Notes</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-pantheon" href="../pantheon/index.html">Pantheon</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-pantheonquicksilver" href="../pantheon/quicksilver.html">Quicksilver</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Composer workflow</span>
+            </li>
+            <li class="menu-item -level-1"><a class="link title  link-pms" href="../pms.html">What PM's Need to know</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Custom Modules/Repos</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-create-custom-repos" href="../create-custom-repos.html">How to Create Custom Managed Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-use-custom-repos" href="../use-custom-repos.html">How to Use Custom Managed Modules</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-manage-custom-repos" href="../manage-custom-repos.html">How to Manage Custom Modules</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">[NEED PAGE] Drupal vs Wordpress</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">[NEED PAGE] For Clients</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Other stuff we want to talk about...</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-d8setup">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/bluecadet/drupal-docs" data-title="bluecadet/drupal-docs">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="setting-up-drupal-and-your-project">Setting up Drupal and Your Project</h1>
+<h2 id="settings.local.php">settings.local.php</h2>
+<pre><code>&lt;?php
+
+/**
+ * Enable local development services.
+ */
+$settings[&apos;container_yamls&apos;][] = DRUPAL_ROOT . &apos;/sites/development.services.yml&apos;;
+$settings[&apos;container_yamls&apos;][] = DRUPAL_ROOT . &apos;/sites/local.services.yml&apos;;
+
+/**
+ * Show all error messages, with backtrace information.
+ *
+ * In case the error level could not be fetched from the database, as for
+ * example the database connection failed, we rely only on this value.
+ */
+$config[&apos;system.logging&apos;][&apos;error_level&apos;] = &apos;verbose&apos;;
+
+/**
+ * Disable CSS and JS aggregation.
+ */
+$config[&apos;system.performance&apos;][&apos;css&apos;][&apos;preprocess&apos;] = FALSE;
+$config[&apos;system.performance&apos;][&apos;js&apos;][&apos;preprocess&apos;] = FALSE;
+
+/**
+ * Disable the render cache (this includes the page cache).
+ *
+ * Note: you should test with the render cache enabled, to ensure the correct
+ * cacheability metadata is present. However, in the early stages of
+ * development, you may want to disable it.
+ *
+ * This setting disables the render cache by using the Null cache back-end
+ * defined by the development.services.yml file above.
+ *
+ * Do not use this setting until after the site is installed.
+ */
+$settings[&apos;cache&apos;][&apos;bins&apos;][&apos;render&apos;] = &apos;cache.backend.null&apos;;
+
+/**
+ * Disable caching for migrations.
+ *
+ * Uncomment the code below to only store migrations in memory and not in the
+ * database. This makes it easier to develop custom migrations.
+ */
+# $settings[&apos;cache&apos;][&apos;bins&apos;][&apos;discovery_migration&apos;] = &apos;cache.backend.memory&apos;;
+
+/**
+ * Disable Internal Page Cache.
+ *
+ * Note: you should test with Internal Page Cache enabled, to ensure the correct
+ * cacheability metadata is present. However, in the early stages of
+ * development, you may want to disable it.
+ *
+ * This setting disables the page cache by using the Null cache back-end
+ * defined by the development.services.yml file above.
+ *
+ * Only use this setting once the site has been installed.
+ */
+$settings[&apos;cache&apos;][&apos;bins&apos;][&apos;page&apos;] = &apos;cache.backend.null&apos;;
+
+/**
+ * Disable Dynamic Page Cache.
+ *
+ * Note: you should test with Dynamic Page Cache enabled, to ensure the correct
+ * cacheability metadata is present (and hence the expected behavior). However,
+ * in the early stages of development, you may want to disable it.
+ */
+$settings[&apos;cache&apos;][&apos;bins&apos;][&apos;dynamic_page_cache&apos;] = &apos;cache.backend.null&apos;;
+
+/**
+ * Allow test modules and themes to be installed.
+ *
+ * Drupal ignores test modules and themes by default for performance reasons.
+ * During development it can be useful to install test extensions for debugging
+ * purposes.
+ */
+$settings[&apos;extension_discovery_scan_tests&apos;] = TRUE;
+
+/**
+ * Enable access to rebuild.php.
+ *
+ * This setting can be enabled to allow Drupal&apos;s php and database cached
+ * storage to be cleared via the rebuild.php page. Access to this page can also
+ * be gained by generating a query string from rebuild_token_calculator.sh and
+ * using these parameters in a request to rebuild.php.
+ */
+$settings[&apos;rebuild_access&apos;] = TRUE;
+
+/**
+ * Skip file system permissions hardening.
+ *
+ * The system module will periodically check the permissions of your site&apos;s
+ * site directory to ensure that it is not writable by the website user. For
+ * sites that are managed with a version control system, this can cause problems
+ * when files in that directory such as settings.php are updated, because the
+ * user pulling in the changes won&apos;t have permissions to modify files in the
+ * directory.
+ */
+$settings[&apos;skip_permissions_hardening&apos;] = TRUE;
+
+$settings[&apos;trusted_host_patterns&apos;][] = &apos;^.+.localhost.com$&apos;;
+$settings[&apos;trusted_host_patterns&apos;][] = &apos;^localhost.com$&apos;;
+$settings[&apos;trusted_host_patterns&apos;][] = &apos;^.+.lndo.site$&apos;;
+
+/**
+ * Error Logging
+ */
+$config[&apos;system.logging&apos;][&apos;error_level&apos;] = &apos;verbose&apos;;
+
+/**
+ * Disable CSS and JS aggregation.
+ */
+$config[&apos;system.performance&apos;][&apos;css&apos;][&apos;preprocess&apos;] = FALSE;
+$config[&apos;system.performance&apos;][&apos;js&apos;][&apos;preprocess&apos;] = FALSE;
+
+/**
+ * Disable page caching
+ */
+$config[&apos;system.performance&apos;][&apos;cache&apos;][&apos;page&apos;][&apos;max_age&apos;] = 0;
+</code></pre>
+<h2 id="development.services.yml">development.services.yml</h2>
+<p>make sure you have development.services.yml file setup correctly</p>
+<pre><code># Local development services.
+#
+# To activate this feature, follow the instructions at the top of the
+# &apos;example.settings.local.php&apos; file, which sits next to this file.
+parameters:
+  http.response.debug_cacheability_headers: true
+  twig.config:
+    debug: true
+    auto_reload: true
+    cache: false
+services:
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
+
+</code></pre>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../d8/install.html"><span class="title">Installation</span></a></div>
+          <div class="right"><a href="../d8/pre-project.html"><span class="label">Next: </span><span class="title">Pre-Project Planning</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

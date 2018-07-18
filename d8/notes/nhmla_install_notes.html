@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../main.css?t=734caa58">
     <script src="../../assets/script.js?t=36f3d457"></script>
     <script src="../../scripts.js?t=56b80ffb"></script>
-    <title>THF install Notes - Drupal Docs</title>
+    <title>NHMLA install Notes - Drupal Docs</title>
     <meta name="viewport" content="width=device-width">
   </head>
   <body class="-menu-visible">
@@ -53,9 +53,11 @@
                 </li>
                 <li class="menu-item -level-2 -parent"><a class="link title  link-d8notes" href="../../d8/notes.html">Notes:</a>
                   <ul class="submenu">
-                    <li class="menu-item -level-3"><a class="link title -active link-d8notesthf_install_notes" href="../../d8/notes/thf_install_notes.html">THF install Notes</a>
+                    <li class="menu-item -level-3"><a class="link title  link-d8notesthf_install_notes" href="../../d8/notes/thf_install_notes.html">THF install Notes</a>
+                    </li>
+                    <li class="menu-item -level-3"><a class="link title -active link-d8notesnhmla_install_notes" href="../../d8/notes/nhmla_install_notes.html">NHMLA install Notes</a>
                       <ul class="headings heading-list">
-                        <li class="heading-item -depth-2"><a class="hlink link-auto-config-import-and-new-relic-notifications" href="#auto-config-import-and-new-relic-notifications">Auto config-import &amp; New Relic notifications</a>
+                        <li class="heading-item -depth-3"><a class="hlink link-auto-config-import-and-new-relic-notifications" href="#auto-config-import-and-new-relic-notifications">Auto config-import &amp; New Relic notifications</a>
                         </li>
                         <li class="heading-item -depth-2"><a class="hlink link-starter-modules" href="#starter-modules">Starter modules</a>
                           <ul class="heading-list -depth-2">
@@ -65,15 +67,15 @@
                             </li>
                             <li class="heading-item -depth-3"><a class="hlink link-some-other-useful-ones" href="#some-other-useful-ones">Some other useful ones</a>
                             </li>
-                            <li class="heading-item -depth-3"><a class="hlink link-turn-on-a-few-we-normally-use" href="#turn-on-a-few-we-normally-use">Turn on a few we normally use</a>
+                            <li class="heading-item -depth-3"><a class="hlink link-turn-on-core-modules-we-normally-use" href="#turn-on-core-modules-we-normally-use">Turn on Core modules we normally use</a>
                             </li>
                             <li class="heading-item -depth-3"><a class="hlink link-turn-off-a-few-modules-we-don't-normally-use" href="#turn-off-a-few-modules-we-don't-normally-use">Turn off a few modules we don’t normally use</a>
+                            </li>
+                            <li class="heading-item -depth-3"><a class="hlink link-add-domain-stuff-modules" href="#add-domain-stuff-modules">Add Domain Stuff modules</a>
                             </li>
                           </ul>
                         </li>
                       </ul>
-                    </li>
-                    <li class="menu-item -level-3"><a class="link title  link-d8notesnhmla_install_notes" href="../../d8/notes/nhmla_install_notes.html">NHMLA install Notes</a>
                     </li>
                   </ul>
                 </li>
@@ -108,20 +110,25 @@
           </ul>
         </li>
       </div>
-      <div class="body page-d8notesthf_install_notes">
+      <div class="body page-d8notesnhmla_install_notes">
         <div class="header-nav">
           <div class="right"><a class="iconlink" href="https://github.com/bluecadet/drupal-docs" data-title="bluecadet/drupal-docs">
               <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
           </div>
         </div>
-        <div class="markdown-body"><h1 id="setting-up-thf-cms">Setting Up THF cms</h1>
-<p>#THF</p>
+        <div class="markdown-body"><h1 id="nhmla-setup">NHMLA setup</h1>
 <ul>
-<li>ran <code>terminus build:project:create --team=&quot;Bluecadet&quot; --org=&quot;bluecadet&quot; --email=&quot;pinge@bluecadet.com&quot; --admin-email=&quot;pinge@bluecadet.com&quot; d8 thf-cms</code></li>
-<li>Cloned github <code>git clone git@github.com:bluecadet/thf-cms.git</code></li>
+<li>Had previously ran the terminus build project.  Starting from there&#x2026;</li>
+<li>Cloned git repo to local</li>
+</ul>
+<pre><code>git clone git@github.com:bluecadet/nhmla.git nhmla
+</code></pre>
+<ul>
+<li>created Code workspace for new site</li>
 <li>ran <code>composer install</code></li>
 <li>ran  <code>lando init --recipe=pantheon</code></li>
-<li>add .lando.yml to .gitignore</li>
+<li>created new Tower project</li>
+<li>add .lando.yml to .gitignore and committed</li>
 <li>add <code>debug: true</code> to .land.yml</li>
 <li>added to .land.yml</li>
 </ul>
@@ -130,24 +137,20 @@
     run_as_root:
       - &quot;apt-get update&quot;
       - &quot;apt-get install libgmp3-dev&quot;
-      - &quot;docker-php-ext-install gmp
+      - &quot;docker-php-ext-install gmp&quot;
 </code></pre>
 <ul>
-<li>changed php to 7.1 in pantheon.yml file</li>
+<li>changed php to 7.1 in pantheon.yml file and committed</li>
 <li>ran <code>lando start</code></li>
+<li>activated New Relic while I was waiting</li>
 <li>ran <code>lando pull --code=none --database=dev --files=dev</code></li>
 </ul>
-<p>GOOD TO GO!</p>
+<p>ALL GOOD</p>
 <ul>
-<li>
-<p>turned off behat tests in .circleci/config.yml</p>
-</li>
-<li>
-<p>Changed Circle config -&gt;advanced settings to &#x2018;Only build pull requests&#x2019; to &#x2018;On&#x2019;</p>
-</li>
-<li>
-<p>added settings.local.php</p>
-</li>
+<li>Changed Timezone to New York in .circleci/config.yml</li>
+<li>turned off behat tests in .circleci/config.yml and committed</li>
+<li>Changed Circle config -&gt;advanced settings to &#x2018;Only build pull requests&#x2019; to &#x2018;On&#x2019;</li>
+<li>added settings.local.php</li>
 </ul>
 <pre><code>&lt;?php
 
@@ -155,7 +158,7 @@
  * Enable local development services.
  */
 $settings[&apos;container_yamls&apos;][] = DRUPAL_ROOT . &apos;/sites/development.services.yml&apos;;
-$settings[&apos;container_yamls&apos;][] = DRUPAL_ROOT . &apos;/sites/development.services.local.yml&apos;;
+$settings[&apos;container_yamls&apos;][] = DRUPAL_ROOT . &apos;/sites/local.services.yml&apos;;
 
 /**
  * Show all error messages, with backtrace information.
@@ -268,7 +271,7 @@ $config[&apos;system.performance&apos;][&apos;js&apos;][&apos;preprocess&apos;] 
 $config[&apos;system.performance&apos;][&apos;cache&apos;][&apos;page&apos;][&apos;max_age&apos;] = 0;
 </code></pre>
 <ul>
-<li>added development.services.local.yml</li>
+<li>added local.services.yml</li>
 </ul>
 <pre><code># Local development services.
 #
@@ -285,11 +288,13 @@ services:
     class: Drupal\Core\Cache\NullBackendFactory
 </code></pre>
 <ul>
-<li>added development.services.local.yml to git ignore</li>
+<li>added local.services.yml to git ignore
+<code>local.services.yml</code>
+NOTE: not full path.  Not sure if this matters or not.</li>
 </ul>
-<h2 id="auto-config-import-and-new-relic-notifications">Auto config-import &amp; New Relic notifications</h2>
+<h3 id="auto-config-import-and-new-relic-notifications">Auto config-import &amp; New Relic notifications</h3>
+<p>Make sure New Relic is enabled</p>
 <ul>
-<li>Make sure New Relic is enabled</li>
 <li>Added 2 files to <code>./private</code> folder for auto import and new relic notification
 <ul>
 <li>drush_config_import.php</li>
@@ -363,10 +368,11 @@ lando drush en metatag pathauto redirect token viewsreference
 views_bulk_operations
 config_split
 devel_generate (submodule of devel)</p>
-<h3 id="turn-on-a-few-we-normally-use">Turn on a few we normally use</h3>
+<h3 id="turn-on-core-modules-we-normally-use">Turn on Core modules we normally use</h3>
 <p>block_content
-media</p>
-<pre><code>lando drush en block_content media
+media
+responsive_image</p>
+<pre><code>lando drush en block_content media responsive_image
 </code></pre>
 <h3 id="turn-off-a-few-modules-we-don&apos;t-normally-use">Turn off a few modules we don&#x2019;t normally use</h3>
 <p>big_pipe
@@ -376,24 +382,18 @@ help
 history
 quickedit
 rdf
-responsive_image
 tour</p>
-<pre><code>lando drush pmu big_pipe color comment help history quickedit rdf responsive_image tour
+<pre><code>lando drush pmu big_pipe color comment help history quickedit rdf tour
 
 </code></pre>
 <p>Note: delete comment field on Article before trying to run above command</p>
-<p>Export Config!!!</p>
-<p>ALL GOOD after CI!!!!</p>
-<ul>
-<li>Need to Setup theme</li>
-<li>Need to add Lighthouse tests</li>
-<li>Need to add Visual Regression Tests</li>
-</ul>
+<h3 id="add-domain-stuff-modules">Add Domain Stuff modules</h3>
+<p>Add stuff</p>
 
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="../../d8/notes.html"><span class="title">Notes:</span></a></div>
-          <div class="right"><a href="../../d8/notes/nhmla_install_notes.html"><span class="label">Next: </span><span class="title">NHMLA install Notes</span></a></div>
+          <div class="left"><a href="../../d8/notes/thf_install_notes.html"><span class="title">THF install Notes</span></a></div>
+          <div class="right"><a href="../../pantheon/index.html"><span class="label">Next: </span><span class="title">Pantheon</span></a></div>
         </div>
       </div>
     </div>

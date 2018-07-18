@@ -119,6 +119,24 @@
             ]
           },
           {
+            "title": "Setup",
+            "source": "docs/d8/setup.md",
+            "url": "d8/setup.html",
+            "slug": "d8setup",
+            "headings": [
+              {
+                "title": "settings.local.php",
+                "depth": 2,
+                "id": "settings.local.php"
+              },
+              {
+                "title": "development.services.yml",
+                "depth": 2,
+                "id": "development.services.yml"
+              }
+            ]
+          },
+          {
             "title": "Pre-Project Planning",
             "source": "docs/d8/pre-project.md",
             "url": "d8/pre-project.html",
@@ -340,6 +358,9 @@
           },
           {
             "title": "Notes:",
+            "source": "docs/d8/notes.md",
+            "url": "d8/notes.html",
+            "slug": "d8notes",
             "sections": [
               {
                 "title": "THF install Notes",
@@ -381,6 +402,56 @@
                         "title": "Turn off a few modules we don’t normally use",
                         "depth": 3,
                         "id": "turn-off-a-few-modules-we-don't-normally-use"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "NHMLA install Notes",
+                "source": "docs/d8/notes/nhmla_install_notes.md",
+                "url": "d8/notes/nhmla_install_notes.html",
+                "slug": "d8notesnhmla_install_notes",
+                "headings": [
+                  {
+                    "title": "Auto config-import & New Relic notifications",
+                    "depth": 3,
+                    "id": "auto-config-import-and-new-relic-notifications"
+                  },
+                  {
+                    "title": "Starter modules",
+                    "depth": 2,
+                    "id": "starter-modules",
+                    "headings": [
+                      {
+                        "title": "All Sites",
+                        "depth": 3,
+                        "id": "all-sites"
+                      },
+                      {
+                        "title": "Web only",
+                        "depth": 3,
+                        "id": "web-only"
+                      },
+                      {
+                        "title": "Some other useful ones",
+                        "depth": 3,
+                        "id": "some-other-useful-ones"
+                      },
+                      {
+                        "title": "Turn on Core modules we normally use",
+                        "depth": 3,
+                        "id": "turn-on-core-modules-we-normally-use"
+                      },
+                      {
+                        "title": "Turn off a few modules we don’t normally use",
+                        "depth": 3,
+                        "id": "turn-off-a-few-modules-we-don't-normally-use"
+                      },
+                      {
+                        "title": "Add Domain Stuff modules",
+                        "depth": 3,
+                        "id": "add-domain-stuff-modules"
                       }
                     ]
                   }
@@ -567,6 +638,24 @@
               "id": "turn-off-a-few-modules-we-don't-normally-use"
             }
           ]
+        }
+      ]
+    },
+    "d8/setup.html": {
+      "source": "docs/d8/setup.md",
+      "title": "Setup - Drupal Docs",
+      "pageTitle": "Setup",
+      "slug": "d8setup",
+      "headings": [
+        {
+          "title": "settings.local.php",
+          "depth": 2,
+          "id": "settings.local.php"
+        },
+        {
+          "title": "development.services.yml",
+          "depth": 2,
+          "id": "development.services.yml"
         }
       ]
     },
@@ -782,6 +871,12 @@
         }
       ]
     },
+    "d8/notes.html": {
+      "source": "docs/d8/notes.md",
+      "title": "Notes: - Drupal Docs",
+      "pageTitle": "Notes:",
+      "slug": "d8notes"
+    },
     "d8/notes/thf_install_notes.html": {
       "source": "docs/d8/notes/thf_install_notes.md",
       "title": "THF install Notes - Drupal Docs",
@@ -822,6 +917,56 @@
               "title": "Turn off a few modules we don’t normally use",
               "depth": 3,
               "id": "turn-off-a-few-modules-we-don't-normally-use"
+            }
+          ]
+        }
+      ]
+    },
+    "d8/notes/nhmla_install_notes.html": {
+      "source": "docs/d8/notes/nhmla_install_notes.md",
+      "title": "NHMLA install Notes - Drupal Docs",
+      "pageTitle": "NHMLA install Notes",
+      "slug": "d8notesnhmla_install_notes",
+      "headings": [
+        {
+          "title": "Auto config-import & New Relic notifications",
+          "depth": 3,
+          "id": "auto-config-import-and-new-relic-notifications"
+        },
+        {
+          "title": "Starter modules",
+          "depth": 2,
+          "id": "starter-modules",
+          "headings": [
+            {
+              "title": "All Sites",
+              "depth": 3,
+              "id": "all-sites"
+            },
+            {
+              "title": "Web only",
+              "depth": 3,
+              "id": "web-only"
+            },
+            {
+              "title": "Some other useful ones",
+              "depth": 3,
+              "id": "some-other-useful-ones"
+            },
+            {
+              "title": "Turn on Core modules we normally use",
+              "depth": 3,
+              "id": "turn-on-core-modules-we-normally-use"
+            },
+            {
+              "title": "Turn off a few modules we don’t normally use",
+              "depth": 3,
+              "id": "turn-off-a-few-modules-we-don't-normally-use"
+            },
+            {
+              "title": "Add Domain Stuff modules",
+              "depth": 3,
+              "id": "add-domain-stuff-modules"
             }
           ]
         }
@@ -877,6 +1022,7 @@
     "docs/d7/install.md": "d7/install.html",
     "docs/d8/README.md": "d8/index.html",
     "docs/d8/install.md": "d8/install.html",
+    "docs/d8/setup.md": "d8/setup.html",
     "docs/d8/pre-project.md": "d8/pre-project.html",
     "docs/d8/pre-launch.md": "d8/pre-launch.html",
     "docs/d8/custom-modules.md": "d8/custom-modules.html",
@@ -885,7 +1031,9 @@
     "docs/d8/recipes/ckeditor.md": "d8/recipes/ckeditor.html",
     "docs/d8/recipes/paragraphs.md": "d8/recipes/paragraphs.html",
     "docs/d8/recipes/states.md": "d8/recipes/states.html",
+    "docs/d8/notes.md": "d8/notes.html",
     "docs/d8/notes/thf_install_notes.md": "d8/notes/thf_install_notes.html",
+    "docs/d8/notes/nhmla_install_notes.md": "d8/notes/nhmla_install_notes.html",
     "docs/pantheon/README.md": "pantheon/index.html",
     "docs/pantheon/quicksilver.md": "pantheon/quicksilver.html",
     "docs/pms.md": "pms.html",
