@@ -358,9 +358,6 @@
           },
           {
             "title": "Notes:",
-            "source": "docs/d8/notes.md",
-            "url": "d8/notes.html",
-            "slug": "d8notes",
             "sections": [
               {
                 "title": "THF install Notes",
@@ -871,12 +868,6 @@
         }
       ]
     },
-    "d8/notes.html": {
-      "source": "docs/d8/notes.md",
-      "title": "Notes: - Drupal Docs",
-      "pageTitle": "Notes:",
-      "slug": "d8notes"
-    },
     "d8/notes/thf_install_notes.html": {
       "source": "docs/d8/notes/thf_install_notes.md",
       "title": "THF install Notes - Drupal Docs",
@@ -1031,7 +1022,6 @@
     "docs/d8/recipes/ckeditor.md": "d8/recipes/ckeditor.html",
     "docs/d8/recipes/paragraphs.md": "d8/recipes/paragraphs.html",
     "docs/d8/recipes/states.md": "d8/recipes/states.html",
-    "docs/d8/notes.md": "d8/notes.html",
     "docs/d8/notes/thf_install_notes.md": "d8/notes/thf_install_notes.html",
     "docs/d8/notes/nhmla_install_notes.md": "d8/notes/nhmla_install_notes.html",
     "docs/pantheon/README.md": "pantheon/index.html",
