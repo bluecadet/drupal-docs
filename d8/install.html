@@ -236,6 +236,9 @@ $settings[&apos;trusted_host_patterns&apos;][] = &apos;^localhost.com$&apos;;
 <p>When using Lando, all <code>terminus</code> commands should be prepended with <code>lando</code>, i.e:</p>
 <pre><code>lando terminus drush cim
 </code></pre>
+<p>Lando and Apache often compete for localhost port 80, so it might make sense to stop Apache before running Lando, i.e.:</p>
+<pre><code>sudo apachectl stop
+</code></pre>
 <h2 id="pantheon-circleci-and-lando">Pantheon, CircleCI, and Lando</h2>
 <h3 id="prerequisites">Prerequisites</h3>
 <ul>
