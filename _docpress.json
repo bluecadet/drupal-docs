@@ -363,6 +363,29 @@
             "slug": "d8notes",
             "sections": [
               {
+                "title": "Drupal 8 Training Notes",
+                "source": "docs/d8/notes/d8-training.md",
+                "url": "d8/notes/d8-training.html",
+                "slug": "d8notesd8-training",
+                "headings": [
+                  {
+                    "title": "Session 1",
+                    "depth": 2,
+                    "id": "session-1"
+                  },
+                  {
+                    "title": "Session 2",
+                    "depth": 2,
+                    "id": "session-2"
+                  },
+                  {
+                    "title": "Session 3",
+                    "depth": 2,
+                    "id": "session-3"
+                  }
+                ]
+              },
+              {
                 "title": "THF install Notes",
                 "source": "docs/d8/notes/thf_install_notes.md",
                 "url": "d8/notes/thf_install_notes.html",
@@ -882,6 +905,29 @@
       "pageTitle": "Notes:",
       "slug": "d8notes"
     },
+    "d8/notes/d8-training.html": {
+      "source": "docs/d8/notes/d8-training.md",
+      "title": "Drupal 8 Training Notes - Drupal Docs",
+      "pageTitle": "Drupal 8 Training Notes",
+      "slug": "d8notesd8-training",
+      "headings": [
+        {
+          "title": "Session 1",
+          "depth": 2,
+          "id": "session-1"
+        },
+        {
+          "title": "Session 2",
+          "depth": 2,
+          "id": "session-2"
+        },
+        {
+          "title": "Session 3",
+          "depth": 2,
+          "id": "session-3"
+        }
+      ]
+    },
     "d8/notes/thf_install_notes.html": {
       "source": "docs/d8/notes/thf_install_notes.md",
       "title": "THF install Notes - Drupal Docs",
@@ -1042,6 +1088,7 @@
     "docs/d8/recipes/paragraphs.md": "d8/recipes/paragraphs.html",
     "docs/d8/recipes/states.md": "d8/recipes/states.html",
     "docs/d8/notes.md": "d8/notes.html",
+    "docs/d8/notes/d8-training.md": "d8/notes/d8-training.html",
     "docs/d8/notes/thf_install_notes.md": "d8/notes/thf_install_notes.html",
     "docs/d8/notes/nhmla_install_notes.md": "d8/notes/nhmla_install_notes.html",
     "docs/pantheon/README.md": "pantheon/index.html",
