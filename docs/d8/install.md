@@ -111,6 +111,12 @@ When using Lando, all `terminus` commands should be prepended with `lando`, i.e:
 lando terminus drush cim
 ```
 
+Lando and Apache often compete for localhost port 80, so it might make sense to stop Apache before running Lando, i.e.:
+
+```
+sudo apachectl stop
+```
+
 ## Pantheon, CircleCI, and Lando
 
 ### Prerequisites
