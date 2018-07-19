@@ -123,7 +123,7 @@ lando terminus drush cim
 
 * Pull repo from github `git clone [repo]`
 * In your terminal, go to your repo directory and run `composer install`
-* In your terminal, run `lando init --recipe=pantheon` to bind to a Pantheon instance
+* Check if the repo includes: **.lando.yml** and **pantheon.yml**. If not, in your terminal, run `lando init --recipe=pantheon` to bind to a Pantheon instance
 * Open up the repo in your text editor. Modify **.lando.yml** to enable debugging: Add line with `xdebug: true`
 * In your text editor, check that **pantheon.yml** has a nested webroot specified: `web_docroot: true`
 * In your text editor, check that **pantheon.yml** has PHP version set to 7.0 (default 7.2 produces errors as of lando * version v3.0.0-beta.47): `php_version: 7.0`

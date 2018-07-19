@@ -1,5 +1,5 @@
-# Setting Up THF cms
-#THF
+# Setting Up THF CMS
+## THF
 
 * ran `terminus build:project:create --team="Bluecadet" --org="bluecadet" --email="pinge@bluecadet.com" --admin-email="pinge@bluecadet.com" d8 thf-cms`
 * Cloned github `git clone git@github.com:bluecadet/thf-cms.git`
