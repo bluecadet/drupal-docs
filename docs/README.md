@@ -18,6 +18,7 @@ Drupal Documentation
     * [Paragraphs](d8/recipes/paragraphs.md)
     * [#States](d8/recipes/states.md)
   * [Notes:](d8/notes.md)
+    * [Drupal 8 Training Notes](d8/notes/d8-training.md)
     * [THF install Notes](d8/notes/thf_install_notes.md)
     * [NHMLA install Notes](d8/notes/nhmla_install_notes.md)
 * [Pantheon](pantheon/README.md)
