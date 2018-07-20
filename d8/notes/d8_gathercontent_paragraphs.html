@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../main.css?t=734caa58">
     <script src="../../assets/script.js?t=36f3d457"></script>
     <script src="../../scripts.js?t=56b80ffb"></script>
-    <title>Paragraphs - Drupal Docs</title>
+    <title>D8 GatherContent Import to Paragraphs - Drupal Docs</title>
     <meta name="viewport" content="width=device-width">
   </head>
   <body class="-menu-visible">
@@ -45,25 +45,7 @@
                     </li>
                     <li class="menu-item -level-3"><a class="link title  link-d8recipesckeditor" href="../../d8/recipes/ckeditor.html">CKEditor Plugins</a>
                     </li>
-                    <li class="menu-item -level-3"><a class="link title -active link-d8recipesparagraphs" href="../../d8/recipes/paragraphs.html">Paragraphs</a>
-                      <ul class="headings heading-list">
-                        <li class="heading-item -depth-2"><a class="hlink link-form-display-options" href="#form-display-options">Form Display Options</a>
-                          <ul class="heading-list -depth-2">
-                            <li class="heading-item -depth-3"><a class="hlink link-paragraph-title-plural-paragraph-title" href="#paragraph-title-plural-paragraph-title">Paragraph Title / Plural Paragraph Title</a>
-                            </li>
-                            <li class="heading-item -depth-3"><a class="hlink link-edit-mode" href="#edit-mode">Edit Mode</a>
-                            </li>
-                            <li class="heading-item -depth-3"><a class="hlink link-add-mode" href="#add-mode">Add mode</a>
-                            </li>
-                            <li class="heading-item -depth-3"><a class="hlink link-form-display-mode" href="#form-display-mode">Form Display Mode</a>
-                            </li>
-                            <li class="heading-item -depth-3"><a class="hlink link-default-paragraph-type" href="#default-paragraph-type">Default paragraph type</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="heading-item -depth-2"><a class="hlink link-how-we-do-it!" href="#how-we-do-it!">How we do it!</a>
-                        </li>
-                      </ul>
+                    <li class="menu-item -level-3"><a class="link title  link-d8recipesparagraphs" href="../../d8/recipes/paragraphs.html">Paragraphs</a>
                     </li>
                     <li class="menu-item -level-3"><a class="link title  link-d8recipesstates" href="../../d8/recipes/states.html">#States</a>
                     </li>
@@ -77,7 +59,7 @@
                     </li>
                     <li class="menu-item -level-3"><a class="link title  link-d8notesnhmla_install_notes" href="../../d8/notes/nhmla_install_notes.html">NHMLA install Notes</a>
                     </li>
-                    <li class="menu-item -level-3"><a class="link title  link-d8notesd8_gathercontent_paragraphs" href="../../d8/notes/d8_gathercontent_paragraphs.html">D8 GatherContent Import to Paragraphs</a>
+                    <li class="menu-item -level-3"><a class="link title -active link-d8notesd8_gathercontent_paragraphs" href="../../d8/notes/d8_gathercontent_paragraphs.html">D8 GatherContent Import to Paragraphs</a>
                     </li>
                   </ul>
                 </li>
@@ -112,51 +94,55 @@
           </ul>
         </li>
       </div>
-      <div class="body page-d8recipesparagraphs">
+      <div class="body page-d8notesd8_gathercontent_paragraphs">
         <div class="header-nav">
           <div class="right"><a class="iconlink" href="https://github.com/bluecadet/drupal-docs" data-title="bluecadet/drupal-docs">
               <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
           </div>
         </div>
-        <div class="markdown-body"><h1 id="paragraphs">Paragraphs</h1>
-<p>When setting up a paragraph field, configuring the settings for the <em>Form Display</em> is key to creating a great admin experience. Here are explanations to the options available.</p>
-<h2 id="form-display-options">Form Display Options</h2>
-<p>(at the current time this is the same for Experimental and Classic Paragraph widgets)</p>
-<h3 id="paragraph-title-plural-paragraph-title">Paragraph Title / Plural Paragraph Title</h3>
-<p>Consider changing the name &quot;Paragraph&quot; to something else, like &quot;Block&quot; or &quot;Callout&quot;. Paragraph makes sense to those of us that work closely with Drupal and the Paragraphs module, but may not make sense to a content author.</p>
-<h3 id="edit-mode">Edit Mode</h3>
-<p>When editing an entity, this will be the default display when first landing on a page.</p>
-<p>Ideally, it is recommended to use &quot;Closed&quot; or &quot;Preview&quot; for ease in re-ordering bundles in a long list. Depending on the content of the bundle, &quot;Closed&quot; may not provide enough information for the author to know what is in the bundle. If you configure the &quot;Preview&quot; display modes for Paragraph bundles though, make sure you keep the height as small as possible to understand what bundle it is without hampering the ease of re-ordering. It would be recommended to add some custom css to the admin pages to help with styling of these items.</p>
-<p>Example of two different types. Both fields have duplicates of the exact same content:</p>
-<p>Settings:
-<img src="../../img/para_settings.png" alt="Paragraphs Example">
-Form:
-<img src="../../img/para_example.jpg" alt="Paragraphs Example"></p>
-<h3 id="add-mode">Add mode</h3>
-<p>How is the &quot;add&quot; or &quot;add more&quot; displayed. Consider how many items the author can choose from.</p>
-<h3 id="form-display-mode">Form Display Mode</h3>
-<p>If there are multiple Form Display Modes enabled, you can choose which one. This could be handy for more complicated bundles in which you want to hide fields on the form.</p>
-<h3 id="default-paragraph-type">Default paragraph type</h3>
-<p>If you wanted to try and force the use of a bundle or &quot;Highly suggest&quot; one, this would probably be the way to go. Also, if you always know the first bundle should be a text field, this will help reduce clicks for the editor.</p>
-<br>
-<br>
-<h2 id="how-we-do-it!">How we do it!</h2>
-<p>It is hard to set a single standard for this. Ideally, though these questions should be answered:</p>
-<ol>
-<li>Can the editor understand what is going on (without understanding Drupal-eeze)?</li>
-<li>Can the editor easily understand what each collapsed (pr preview) paragraph bundle contains?</li>
-<li>Can the editor easily rearrange items in the list?</li>
-<li>Can the editor easily add new items in a clear manner?</li>
-</ol>
-<p>For most &quot;Content&quot; fields we do at Bluecadet, the recommendation would be to</p>
-<p>First, name the item appropriately. &quot;Paragraph&quot; is typically not ideal.</p>
-<p>Second, Edit mode should be set to use the Preview display mode, and the preview should be clear and concise and try to be 3-5 lines high. Take the time to create the extra bit of css to make this look good. <em>(link to how this is done)</em></p>
-<p>Third, take the time to understand and plan Form Displays. Typically with paragraphs not much can be done, but see if anything can be cut out?</p>
+        <div class="markdown-body"><h1 id="drupal-8-+-importing-gathercontent-to-paragraphs">Drupal 8 + Importing GatherContent to Paragraphs</h1>
+<p>New feature claims to support importing GatherContent fields into D8 Paragraphs. There&apos;s a bug in the most recent beta, so ideally we&apos;d wait for a new release. But this does seem to work</p>
+<ul>
+<li>
+<p>install paragraphs, gather content</p>
+</li>
+<li>
+<p>Authenticate gather content module in drupal with api key in gather content</p>
+</li>
+<li>
+<p>Create some content in gather content using a template</p>
+</li>
+<li>
+<p>Create content type in drupal for that content, using  a paragraphs field</p>
+<ul>
+<li>make sure to specify the paragraph types you want to map to</li>
+</ul>
+</li>
+<li>
+<p>Configuration &gt; GC &gt; content mapping</p>
+<ul>
+<li>error with mappings, found an issue they fixed, trying dev release of gather content and updated</li>
+<li>I think there&#x2019;s a mapping bug that needs to get pushed in a release
+<ul>
+<li><a href="https://www.drupal.org/project/gathercontent/issues/2983849">https://www.drupal.org/project/gathercontent/issues/2983849</a></li>
+<li>Error is fixed on dev branch, but I guess stay tuned for new release:</li>
+<li>require the dev branch: lando composer require &apos;drupal/gathercontent:4.x-dev&apos;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Configuration &gt; Gather Content &gt; Import content</p>
+</li>
+<li>
+<p>Paragraphs seem to import in order they are in gather content</p>
+</li>
+</ul>
 
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="../../d8/recipes/ckeditor.html"><span class="title">CKEditor Plugins</span></a></div>
-          <div class="right"><a href="../../d8/recipes/states.html"><span class="label">Next: </span><span class="title">#States</span></a></div>
+          <div class="left"><a href="../../d8/notes/nhmla_install_notes.html"><span class="title">NHMLA install Notes</span></a></div>
+          <div class="right"><a href="../../pantheon/index.html"><span class="label">Next: </span><span class="title">Pantheon</span></a></div>
         </div>
       </div>
     </div>

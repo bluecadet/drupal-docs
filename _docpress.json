@@ -484,6 +484,12 @@
                     ]
                   }
                 ]
+              },
+              {
+                "title": "D8 GatherContent Import to Paragraphs",
+                "source": "docs/d8/notes/d8_gathercontent_paragraphs.md",
+                "url": "d8/notes/d8_gathercontent_paragraphs.html",
+                "slug": "d8notesd8_gathercontent_paragraphs"
               }
             ]
           }
@@ -1028,6 +1034,12 @@
         }
       ]
     },
+    "d8/notes/d8_gathercontent_paragraphs.html": {
+      "source": "docs/d8/notes/d8_gathercontent_paragraphs.md",
+      "title": "D8 GatherContent Import to Paragraphs - Drupal Docs",
+      "pageTitle": "D8 GatherContent Import to Paragraphs",
+      "slug": "d8notesd8_gathercontent_paragraphs"
+    },
     "pantheon/index.html": {
       "source": "docs/pantheon/README.md",
       "title": "Pantheon - Drupal Docs",
@@ -1091,6 +1103,7 @@
     "docs/d8/notes/d8-training.md": "d8/notes/d8-training.html",
     "docs/d8/notes/thf_install_notes.md": "d8/notes/thf_install_notes.html",
     "docs/d8/notes/nhmla_install_notes.md": "d8/notes/nhmla_install_notes.html",
+    "docs/d8/notes/d8_gathercontent_paragraphs.md": "d8/notes/d8_gathercontent_paragraphs.html",
     "docs/pantheon/README.md": "pantheon/index.html",
     "docs/pantheon/quicksilver.md": "pantheon/quicksilver.html",
     "docs/pms.md": "pms.html",
