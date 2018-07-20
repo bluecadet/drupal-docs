@@ -21,6 +21,7 @@ Drupal Documentation
     * [Drupal 8 Training Notes](d8/notes/d8-training.md)
     * [THF install Notes](d8/notes/thf_install_notes.md)
     * [NHMLA install Notes](d8/notes/nhmla_install_notes.md)
+    * [D8 GatherContent Import to Paragraphs](d8/notes/d8_gathercontent_paragraphs.md)
 * [Pantheon](pantheon/README.md)
   * [Quicksilver](pantheon/quicksilver.md)
 * Composer workflow
