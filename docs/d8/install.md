@@ -22,7 +22,7 @@ Follow directions at pantheon's link above.
   <br>`terminus build:project:create --team="Bluecadet" --org="bluecadet" --email="pinge@bluecadet.com" --admin-email="pinge@bluecadet.com" d8 philly-pwa`
   make sure to include team and org, otherwise projects will be saved to your personal accounts.
 * Once the environemnts are created, goto circleci.com, under the project settings, goto Advanced Settings -> Only build pull requests and check ON. This will reduce uneeded builds and save time during development.
-* When creating a local environment, if you are using apache, there will not b an `.htaccess` file. You'll need to grab it from another repo.
+* When creating a local environment, if you are using apache, there will not be an `.htaccess` file at the root of the project. You will need to grab it from another repo OR from a clean download of Drupal from drupal.org.
 
 
 <!-- 1. The site is now ready to be worked on
@@ -111,6 +111,12 @@ When using Lando, all `terminus` commands should be prepended with `lando`, i.e:
 lando terminus drush cim
 ```
 
+Lando and Apache often compete for localhost port 80, so it might make sense to stop Apache before running Lando, i.e.:
+
+```
+sudo apachectl stop
+```
+
 ## Pantheon, CircleCI, and Lando
 
 ### Prerequisites
@@ -123,9 +129,87 @@ lando terminus drush cim
 
 * Pull repo from github `git clone [repo]`
 * In your terminal, go to your repo directory and run `composer install`
-* In your terminal, run `lando init --recipe=pantheon` to bind to a Pantheon instance
+* Check if the repo includes: **.lando.yml** and **pantheon.yml**. If not, in your terminal, run `lando init --recipe=pantheon` to bind to a Pantheon instance
 * Open up the repo in your text editor. Modify **.lando.yml** to enable debugging: Add line with `xdebug: true`
 * In your text editor, check that **pantheon.yml** has a nested webroot specified: `web_docroot: true`
 * In your text editor, check that **pantheon.yml** has PHP version set to 7.0 (default 7.2 produces errors as of lando * version v3.0.0-beta.47): `php_version: 7.0`
 * In your terminal, run `lando start`
 * In your terminal, do a pull for the database and files: `lando pull --code=none --database=dev --files=dev`
+
+
+
+## Starter modules
+### All Sites
+* admin_toolbar
+* config_devel
+* config_split
+* ctools
+* devel
+* diff
+* focal_point
+* hsts
+* inline_entity_form
+* new_relic_rpm
+* pantheon_advanced_page_cache
+* paragraphs
+* redis
+
+```
+lando composer require drupal/admin_toolbar drupal/config_devel drupal/config_split drupal/ctools drupal/devel drupal/diff drupal/focal_point drupal/hsts  drupal/inline_entity_form drupal/new_relic_rpm drupal/pantheon_advanced_page_cache drupal/paragraphs drupal/redis
+
+cd web
+
+lando drush en admin_toolbar admin_toolbar_tools config_devel config_split ctools devel kint diff focal_point hsts inline_entity_form new_relic_rpm pantheon_advanced_page_cache paragraphs
+
+```
+
+NOTE: turn on Redis LATER!!
+
+### Web only
+* metatag
+* pathauto
+* redirect
+* simple_sitemap
+* token
+* viewsreference
+
+```
+lando composer require drupal/metatag drupal/pathauto drupal/redirect drupal/token drupal/viewsreference
+
+cd web
+
+lando drush en metatag pathauto redirect token viewsreference
+
+```
+
+### Some other useful ones
+* ultimate_cron
+* views_bulk_operations
+* config_split
+* devel_generate (submodule of devel)
+
+
+### Turn on a few we normally use
+* block_content
+* media
+
+```
+lando drush en block_content media
+```
+
+### Turn off a few modules we don’t normally use
+* big_pipe
+* color
+* comment
+* help
+* history
+* quickedit
+* rdf
+* responsive_image
+* tour
+
+```
+lando drush pmu big_pipe color comment help history quickedit rdf responsive_image tour
+
+```
+Note: delete comment field on Article before trying to run above command
