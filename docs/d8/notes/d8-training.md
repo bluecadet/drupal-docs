@@ -43,3 +43,14 @@ We also covered debugging. Helpful links:
 * [VS Code PHP Debug Extension](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
 * [Atom PHP Debug Extension](https://atom.io/packages/php-debug)
 * [Debugging Drupal 8 Twig templates with Xdebug 🐛](https://guusvandewal.nl/drupal-blog/debugging-drupal-8-twig-templates-xdebug-🐛)
+
+## Session 4
+
+### Menus(!)
+
+### JavaScript
+
+Helpful links:
+
+* https://www.drupal.org/docs/8/api/javascript-api/add-javascript-to-your-theme-or-module
+* https://www.drupal.org/docs/8/theming-drupal-8/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-theme
