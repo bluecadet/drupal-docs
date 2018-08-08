@@ -382,6 +382,23 @@
                     "title": "Session 3",
                     "depth": 2,
                     "id": "session-3"
+                  },
+                  {
+                    "title": "Session 4",
+                    "depth": 2,
+                    "id": "session-4",
+                    "headings": [
+                      {
+                        "title": "Menus(!)",
+                        "depth": 3,
+                        "id": "menus(!)"
+                      },
+                      {
+                        "title": "JavaScript",
+                        "depth": 3,
+                        "id": "javascript"
+                      }
+                    ]
                   }
                 ]
               },
@@ -931,6 +948,23 @@
           "title": "Session 3",
           "depth": 2,
           "id": "session-3"
+        },
+        {
+          "title": "Session 4",
+          "depth": 2,
+          "id": "session-4",
+          "headings": [
+            {
+              "title": "Menus(!)",
+              "depth": 3,
+              "id": "menus(!)"
+            },
+            {
+              "title": "JavaScript",
+              "depth": 3,
+              "id": "javascript"
+            }
+          ]
         }
       ]
     },
