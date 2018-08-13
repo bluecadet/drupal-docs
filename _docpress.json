@@ -389,10 +389,17 @@
                     "id": "session-4",
                     "headings": [
                       {
-                        "title": "Menus(!)",
+                        "title": "Menus",
                         "depth": 3,
-                        "id": "menus(!)"
-                      },
+                        "id": "menus"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Session 5",
+                    "depth": 2,
+                    "id": "session-5",
+                    "headings": [
                       {
                         "title": "JavaScript",
                         "depth": 3,
@@ -955,10 +962,17 @@
           "id": "session-4",
           "headings": [
             {
-              "title": "Menus(!)",
+              "title": "Menus",
               "depth": 3,
-              "id": "menus(!)"
-            },
+              "id": "menus"
+            }
+          ]
+        },
+        {
+          "title": "Session 5",
+          "depth": 2,
+          "id": "session-5",
+          "headings": [
             {
               "title": "JavaScript",
               "depth": 3,

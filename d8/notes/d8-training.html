@@ -63,8 +63,12 @@
                         </li>
                         <li class="heading-item -depth-2"><a class="hlink link-session-4" href="#session-4">Session 4</a>
                           <ul class="heading-list -depth-2">
-                            <li class="heading-item -depth-3"><a class="hlink link-menus(!)" href="#menus(!)">Menus(!)</a>
+                            <li class="heading-item -depth-3"><a class="hlink link-menus" href="#menus">Menus</a>
                             </li>
+                          </ul>
+                        </li>
+                        <li class="heading-item -depth-2"><a class="hlink link-session-5" href="#session-5">Session 5</a>
+                          <ul class="heading-list -depth-2">
                             <li class="heading-item -depth-3"><a class="hlink link-javascript" href="#javascript">JavaScript</a>
                             </li>
                           </ul>
@@ -141,9 +145,13 @@
 <li><a href="https://drupalize.me/tutorial/what-are-preprocess-functions?p=2512">https://drupalize.me/tutorial/what-are-preprocess-functions?p=2512</a></li>
 </ul>
 <p>In our theme file (<strong>bluecadet_base.theme</strong>) we created a variable in the node preprocess hook <strong>bluecadet_base_preprocess_node()</strong>, i.e.</p>
-<p><code>$variables[&apos;foo&apos;] = bar;</code></p>
+<p>``
+$variables[&apos;foo&apos;] = bar;
+``</p>
 <p>Finally in our node&#x2019;s Twig template file (<strong>themes/custom/bluecadet_base/templates/node/node--[content type].html.twig</strong>) we added the output for our variable:</p>
-<p><code>{{ foo }}</code></p>
+<p>``
+{{ foo }}
+``</p>
 <p>We also covered debugging. Helpful links:</p>
 <ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug">VS Code PHP Debug Extension</a></li>
@@ -151,7 +159,34 @@
 <li><a href="https://guusvandewal.nl/drupal-blog/debugging-drupal-8-twig-templates-xdebug-%F0%9F%90%9B">Debugging Drupal 8 Twig templates with Xdebug &#x1F41B;</a></li>
 </ul>
 <h2 id="session-4">Session 4</h2>
-<h3 id="menus(!)">Menus(!)</h3>
+<h3 id="menus">Menus</h3>
+<p>We covered:</p>
+<ul>
+<li>Menu configuration (data side)</li>
+<li>Menu block and regions (layout side)</li>
+<li>Menu twig templates</li>
+</ul>
+<p>Helpful links:</p>
+<ul>
+<li>Menus: <a href="https://drupalize.me/topic/menus">https://drupalize.me/topic/menus</a></li>
+<li>Regions: <a href="https://drupalize.me/tutorial/regions?p=2512">https://drupalize.me/tutorial/regions?p=2512</a></li>
+</ul>
+<p>Core Twig templates can be found in <code>/core/modules/system/templates</code></p>
+<p>An example header template can be used to wrap block output, for ex:</p>
+<pre><code>&lt;header role=&quot;banner&quot;&gt;
+    {%  if page.header.bluecadet_base_main_menu %}
+      &lt;div class=&quot;col-center&quot;&gt;
+        {{ page.header.bluecadet_base_main_menu }}
+      &lt;/div&gt;
+    {% endif %}
+    {%  if page.header.bluecadet_base_search %}
+      &lt;div class=&quot;col-right&quot;&gt;
+        {{ page.header.bluecadet_base_search }}
+      &lt;/div&gt;
+    {% endif %}
+&lt;/header&gt;
+</code></pre>
+<h2 id="session-5">Session 5</h2>
 <h3 id="javascript">JavaScript</h3>
 <p>Helpful links:</p>
 <ul>
