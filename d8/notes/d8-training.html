@@ -145,13 +145,11 @@
 <li><a href="https://drupalize.me/tutorial/what-are-preprocess-functions?p=2512">https://drupalize.me/tutorial/what-are-preprocess-functions?p=2512</a></li>
 </ul>
 <p>In our theme file (<strong>bluecadet_base.theme</strong>) we created a variable in the node preprocess hook <strong>bluecadet_base_preprocess_node()</strong>, i.e.</p>
-<p>``
-$variables[&apos;foo&apos;] = bar;
-``</p>
+<pre><code>$variables\[&apos;foo&apos;] = bar;
+</code></pre>
 <p>Finally in our node&#x2019;s Twig template file (<strong>themes/custom/bluecadet_base/templates/node/node--[content type].html.twig</strong>) we added the output for our variable:</p>
-<p>``
-{{ foo }}
-``</p>
+<pre><code>{{ foo }}
+</code></pre>
 <p>We also covered debugging. Helpful links:</p>
 <ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug">VS Code PHP Debug Extension</a></li>
