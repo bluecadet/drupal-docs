@@ -71,6 +71,13 @@ An example header template can be used to wrap block output, for ex:
 	      </div>
 	    {% endif %}
 	</header>
+	
+Wherein:
+
+* `page.header` denotes the page object, header region
+* `bluecadet_base_main_menu` denotes the theme and the block machine name
+
+In this example we are checking for the presence of the `main menu` block within the `header` region, and if it exists we will wrap it within a \<div\> with the class `col-center`
 
 
 ## Session 5
