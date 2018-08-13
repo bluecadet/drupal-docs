@@ -26,23 +26,23 @@ We covered preprocessors. Helpful links:
 * [https://www.drupal.org/docs/8/theming/twig/twig-best-practices-preprocess-functions-and-templates](https://www.drupal.org/docs/8/theming/twig/twig-best-practices-preprocess-functions-and-templates)
 * [https://drupalize.me/tutorial/what-are-preprocess-functions?p=2512](https://drupalize.me/tutorial/what-are-preprocess-functions?p=2512)
 
-In our theme file (**bluecadet_base.theme**) we created a variable in the node preprocess hook **bluecadet_base_preprocess_node()**, i.e.
+In our theme file (**bluecadet\_base.theme**) we created a variable in the node preprocess hook **bluecadet\_base\_preprocess\_node()**, i.e.
 
-``
+\`\`
 $variables['foo'] = bar;
-``
+\`\`
 
-Finally in our node’s Twig template file (**themes/custom/bluecadet_base/templates/node/node\-\-[content type].html.twig**) we added the output for our variable:
+Finally in our node’s Twig template file (**themes/custom/bluecadet\_base/templates/node/node\-\-[content type].html.twig**) we added the output for our variable:
 
-``
+\`\`
 {{ foo }}
-``
+\`\`
 
 We also covered debugging. Helpful links:
 
 * [VS Code PHP Debug Extension](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
 * [Atom PHP Debug Extension](https://atom.io/packages/php-debug)
-* [Debugging Drupal 8 Twig templates with Xdebug 🐛](https://guusvandewal.nl/drupal-blog/debugging-drupal-8-twig-templates-xdebug-🐛)
+* [Debugging Drupal 8 Twig templates with Xdebug 🐛](https://guusvandewal.nl/drupal-blog/debugging-drupal-8-twig-templates-xdebug-%F0%9F%90%9B)
 
 ## Session 4
 
@@ -83,5 +83,5 @@ An example header template can be used to wrap block output, for ex:
 
 Helpful links:
 
-* https://www.drupal.org/docs/8/api/javascript-api/add-javascript-to-your-theme-or-module
-* https://www.drupal.org/docs/8/theming-drupal-8/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-theme
+* [https://www.drupal.org/docs/8/api/javascript-api/add-javascript-to-your-theme-or-module](https://www.drupal.org/docs/8/api/javascript-api/add-javascript-to-your-theme-or-module)
+* [https://www.drupal.org/docs/8/theming-drupal-8/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-theme](https://www.drupal.org/docs/8/theming-drupal-8/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-theme)
