@@ -79,6 +79,11 @@ Wherein:
 
 In this example we are checking for the presence of the `main menu` block within the `header` region, and if it exists we will wrap it within a \<div\> with the class `col-center`
 
+For menu Twig modifications we focused on two files:
+
+* menu.html.twig (`/themes/custom/bluecadet_base/templates/menu/menu.html.twig`)
+* header.html.twig (`/themes/custom/bluecadet_base/templates/includes/header.html.twig`)
+
 
 ## Session 5
 
