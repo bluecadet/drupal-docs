@@ -28,15 +28,11 @@ We covered preprocessors. Helpful links:
 
 In our theme file (**bluecadet\_base.theme**) we created a variable in the node preprocess hook **bluecadet\_base\_preprocess\_node()**, i.e.
 
-\`\`
-$variables['foo'] = bar;
-\`\`
+	$variables\['foo'] = bar;
 
 Finally in our node’s Twig template file (**themes/custom/bluecadet\_base/templates/node/node\-\-[content type].html.twig**) we added the output for our variable:
 
-\`\`
-{{ foo }}
-\`\`
+	{{ foo }}
 
 We also covered debugging. Helpful links:
 
