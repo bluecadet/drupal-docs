@@ -46,7 +46,38 @@ We also covered debugging. Helpful links:
 
 ## Session 4
 
-### Menus(!)
+### Menus
+
+We covered:
+
+* Menu configuration (data side)
+* Menu block and regions (layout side)
+* Menu twig templates
+
+Helpful links:
+
+* Menus: [https://drupalize.me/topic/menus](https://drupalize.me/topic/menus)
+* Regions: [https://drupalize.me/tutorial/regions?p=2512](https://drupalize.me/tutorial/regions?p=2512)
+
+Core Twig templates can be found in `/core/modules/system/templates`
+
+An example header template can be used to wrap block output, for ex:
+
+	<header role="banner">
+	    {%  if page.header.bluecadet_base_main_menu %}
+	      <div class="col-center">
+	        {{ page.header.bluecadet_base_main_menu }}
+	      </div>
+	    {% endif %}
+	    {%  if page.header.bluecadet_base_search %}
+	      <div class="col-right">
+	        {{ page.header.bluecadet_base_search }}
+	      </div>
+	    {% endif %}
+	</header>
+
+
+## Session 5
 
 ### JavaScript
 
