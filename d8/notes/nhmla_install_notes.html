@@ -73,7 +73,7 @@
                             </li>
                             <li class="heading-item -depth-3"><a class="hlink link-turn-off-a-few-modules-we-don't-normally-use" href="#turn-off-a-few-modules-we-don't-normally-use">Turn off a few modules we don’t normally use</a>
                             </li>
-                            <li class="heading-item -depth-3"><a class="hlink link-add-domain-stuff-modules" href="#add-domain-stuff-modules">Add Domain Stuff modules</a>
+                            <li class="heading-item -depth-3"><a class="hlink link-add-multi-domain-stuff" href="#add-multi-domain-stuff">Add Multi-Domain Stuff</a>
                             </li>
                           </ul>
                         </li>
@@ -391,8 +391,25 @@ tour</p>
 
 </code></pre>
 <p>Note: delete comment field on Article before trying to run above command</p>
-<h3 id="add-domain-stuff-modules">Add Domain Stuff modules</h3>
-<p>Add stuff</p>
+<h3 id="add-multi-domain-stuff">Add Multi-Domain Stuff</h3>
+<ul>
+<li>installed domain_access module
+<ul>
+<li><a href="https://www.drupal.org/project/domain">Domain Access | Drupal.org</a></li>
+<li><a href="https://www.drupal.org/node/1068570">Related contributed modules | Drupal.org</a></li>
+</ul>
+</li>
+<li>Need to add more domains so we can work locally with multiple domains in lando.</li>
+<li>Added new domains to end of .lando.yml file</li>
+</ul>
+<pre><code>proxy:
+  edge:
+    - nhmla.lndo.site
+    - nhmlac.lndo.site
+    - nhm.lndo.site
+    - tarpits.lndo.site
+    - hartranch.lndo.site
+</code></pre>
 
         </div>
         <div class="footer-nav">
