@@ -291,14 +291,19 @@ Note: delete comment field on Article before trying to run above command
 
 
 
-### Add Domain Stuff modules
+### Add Multi-Domain Stuff
 
-
-
-
-
-Add stuff
-
-
-
-
+* installed domain_access module
+	* [Domain Access | Drupal.org](https://www.drupal.org/project/domain)
+	* [Related contributed modules | Drupal.org](https://www.drupal.org/node/1068570)
+* Need to add more domains so we can work locally with multiple domains in lando.
+* Added new domains to end of .lando.yml file
+```
+proxy:
+  edge:
+    - nhmla.lndo.site
+    - nhmlac.lndo.site
+    - nhm.lndo.site
+    - tarpits.lndo.site
+    - hartranch.lndo.site
+```
