@@ -1,0 +1,5 @@
+services:
+  thf_gc.GCSubscriber:
+    class: '\Drupal\thf_gc\EventSubscriber\THFGCSubscriber'
+    tags:
+      - { name: 'event_subscriber' }

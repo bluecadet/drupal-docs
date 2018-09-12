@@ -1,0 +1,6 @@
+name: THF - Gather Content Bridge
+type: module
+description: THF - Gather Content Bridge
+core: 8.x
+package: The Henry Ford
+version: '8.x-1.0'

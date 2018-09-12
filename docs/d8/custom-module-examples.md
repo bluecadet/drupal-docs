@@ -22,7 +22,9 @@ NONE
 ## Modules
 
 ### Maintained
-NONE
+
+#### [THF GatherContent Connection](https://github.com/bluecadet/drupal-docs/tree/master/examples/thf_gc)
+This is an example of how to use Symfony Events to "hook" into the GatherContent Migration Module.
 
 ### Abandoned
 NONE
