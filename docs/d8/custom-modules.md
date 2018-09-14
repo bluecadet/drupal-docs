@@ -26,6 +26,9 @@ NONE
 #### [Bluecadet Utilities](https://github.com/bluecadet/bluecadet_utilities)
 This module provides basic utilities to aide in the development of Drupal 8 projects.
 
+#### [Blucadet Configuration Suite](https://github.com/bluecadet/bluecadet_config_suite)
+This module containe submodules that provide config files to be inported at the start of your project to get your project started quickly.
+
 #### [Bluecadet Image Derivatives](https://github.com/bluecadet/bluecadet_image_derivatives)
 This module provides the ability to create image derivatives through cron. Specifically usefull for providing images for interactives.
 
