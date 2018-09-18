@@ -5,7 +5,14 @@
         "title": "Drupal Docs",
         "source": "README.md",
         "url": "index.html",
-        "slug": "index"
+        "slug": "index",
+        "headings": [
+          {
+            "title": "Contributing",
+            "depth": 2,
+            "id": "contributing"
+          }
+        ]
       },
       {
         "title": "D7",
@@ -588,7 +595,14 @@
       "source": "README.md",
       "title": "Drupal Docs",
       "pageTitle": "Drupal Docs",
-      "slug": "index"
+      "slug": "index",
+      "headings": [
+        {
+          "title": "Contributing",
+          "depth": 2,
+          "id": "contributing"
+        }
+      ]
     },
     "d7/index.html": {
       "source": "docs/d7/README.md",
@@ -1158,8 +1172,8 @@
     "docs/create-custom-repos.md": "create-custom-repos.html",
     "docs/use-custom-repos.md": "use-custom-repos.html",
     "docs/manage-custom-repos.md": "manage-custom-repos.html",
-    "docs/favicon.ico": "favicon.ico",
     "docs/main.css": "main.css",
+    "docs/favicon.ico": "favicon.ico",
     "docs/scripts.js": "scripts.js",
     "docs/img/bc_logo.png": "img/bc_logo.png",
     "docs/img/para_example.jpg": "img/para_example.jpg",
