@@ -12,6 +12,6 @@ Everything you ever wanted to know about Drupal and how it relates to Bluecadet.
 
 Docs are accessible at: https://bluecadet.github.io/drupal-docs/
 
-##Contributing
+## Contributing
 
 Make changes directly on the Master branch. Travis builds to `gh-pages`.
