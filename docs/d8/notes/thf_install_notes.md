@@ -168,7 +168,7 @@ services:
 
 ## Auto config-import & New Relic notifications
 * Make sure New Relic is enabled
-* Added 2 files to `./private` folder for auto import and new relic notification
+* Added 2 files to `./web/private` folder for auto import and new relic notification
 	* drush_config_import.php
 	* new_relic_deploy.php
 * Update pantheon.yml
