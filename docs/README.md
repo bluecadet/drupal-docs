@@ -23,6 +23,7 @@ Drupal Documentation
     * [NHMLA install Notes](d8/notes/nhmla_install_notes.md)
     * [D8 GatherContent Import to Paragraphs](d8/notes/d8_gathercontent_paragraphs.md)
 * [Pantheon](pantheon/README.md)
+  * [Backups](pantheon/backups.md)
   * [Quicksilver](pantheon/quicksilver.md)
 * Composer workflow
 * [What PM's Need to know](pms.md)
