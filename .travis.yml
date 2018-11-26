@@ -1,6 +1,11 @@
 language: node_js
 node_js:
-- 4
+  - 'stable'
+  - '8'
+  - '6'
+cache:
+  directories:
+    - node_modules
 
 env:
   global:
@@ -10,7 +15,8 @@ env:
     - GIT_SOURCE: _docpress
 
 script:
-- npm install docpress && ./node_modules/.bin/docpress build
+  - npm install docpress
+  - ./node_modules/.bin/docpress build
 
 after_success:
-- if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm install git-update-ghpages && ./node_modules/.bin/git-update-ghpages -e; fi
+  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm install git-update-ghpages && ./node_modules/.bin/git-update-ghpages -e; fi
