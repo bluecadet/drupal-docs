@@ -18,8 +18,12 @@ Note: Media module will install types:
   - `drush dl entity_browser-2.x`
 1. Download and enable 'Media Entity Browser' and make sure it is on 2.x branch
   - `drush dl media_entity_browser-2.x`
+	- enable `Media Entity IEF` module
 
 ## Setup Media Entity Forms
+
+We want to create form modes specifically for Media entities when creating inside a piece of content. Here we will get that ready.
+
 1. Add new Form Mode for Media
 	1. Got to Structure >> Display Modes  >> Form Modes >> Add
 	1. Click Media
