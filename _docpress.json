@@ -533,6 +533,12 @@
         "slug": "pantheon",
         "sections": [
           {
+            "title": "Backups",
+            "source": "docs/pantheon/backups.md",
+            "url": "pantheon/backups.html",
+            "slug": "pantheonbackups"
+          },
+          {
             "title": "Quicksilver",
             "source": "docs/pantheon/quicksilver.md",
             "url": "pantheon/quicksilver.html",
@@ -1108,6 +1114,12 @@
       "pageTitle": "Pantheon",
       "slug": "pantheon"
     },
+    "pantheon/backups.html": {
+      "source": "docs/pantheon/backups.md",
+      "title": "Backups - Drupal Docs",
+      "pageTitle": "Backups",
+      "slug": "pantheonbackups"
+    },
     "pantheon/quicksilver.html": {
       "source": "docs/pantheon/quicksilver.md",
       "title": "Quicksilver - Drupal Docs",
@@ -1167,13 +1179,14 @@
     "docs/d8/notes/nhmla_install_notes.md": "d8/notes/nhmla_install_notes.html",
     "docs/d8/notes/d8_gathercontent_paragraphs.md": "d8/notes/d8_gathercontent_paragraphs.html",
     "docs/pantheon/README.md": "pantheon/index.html",
+    "docs/pantheon/backups.md": "pantheon/backups.html",
     "docs/pantheon/quicksilver.md": "pantheon/quicksilver.html",
     "docs/pms.md": "pms.html",
     "docs/create-custom-repos.md": "create-custom-repos.html",
     "docs/use-custom-repos.md": "use-custom-repos.html",
     "docs/manage-custom-repos.md": "manage-custom-repos.html",
-    "docs/main.css": "main.css",
     "docs/favicon.ico": "favicon.ico",
+    "docs/main.css": "main.css",
     "docs/scripts.js": "scripts.js",
     "docs/img/bc_logo.png": "img/bc_logo.png",
     "docs/img/para_example.jpg": "img/para_example.jpg",

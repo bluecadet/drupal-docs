@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../main.css?t=734caa58">
     <script src="../assets/script.js?t=42463e55"></script>
     <script src="../scripts.js?t=56b80ffb"></script>
-    <title>Pre-Project Planning - Drupal Docs</title>
+    <title>Backups - Drupal Docs</title>
     <meta name="viewport" content="width=device-width">
   </head>
   <body class="-menu-visible">
@@ -29,13 +29,7 @@
                 </li>
                 <li class="menu-item -level-2"><a class="link title  link-d8setup" href="../d8/setup.html">Setup</a>
                 </li>
-                <li class="menu-item -level-2"><a class="link title -active link-d8pre-project" href="../d8/pre-project.html">Pre-Project Planning</a>
-                  <ul class="headings heading-list">
-                    <li class="heading-item -depth-2"><a class="hlink link-things-to-think-about" href="#things-to-think-about">Things to think about</a>
-                    </li>
-                    <li class="heading-item -depth-2"><a class="hlink link-things-to-do" href="#things-to-do">Things to do</a>
-                    </li>
-                  </ul>
+                <li class="menu-item -level-2"><a class="link title  link-d8pre-project" href="../d8/pre-project.html">Pre-Project Planning</a>
                 </li>
                 <li class="menu-item -level-2"><a class="link title  link-d8pre-launch" href="../d8/pre-launch.html">Pre-Launch Planning</a>
                 </li>
@@ -73,7 +67,7 @@
             </li>
             <li class="menu-item -level-1 -parent"><a class="link title  link-pantheon" href="../pantheon/index.html">Pantheon</a>
               <ul class="submenu">
-                <li class="menu-item -level-2"><a class="link title  link-pantheonbackups" href="../pantheon/backups.html">Backups</a>
+                <li class="menu-item -level-2"><a class="link title -active link-pantheonbackups" href="../pantheon/backups.html">Backups</a>
                 </li>
                 <li class="menu-item -level-2"><a class="link title  link-pantheonquicksilver" href="../pantheon/quicksilver.html">Quicksilver</a>
                 </li>
@@ -102,60 +96,27 @@
           </ul>
         </li>
       </div>
-      <div class="body page-d8pre-project">
+      <div class="body page-pantheonbackups">
         <div class="header-nav">
           <div class="right"><a class="iconlink" href="https://github.com/bluecadet/drupal-docs" data-title="bluecadet/drupal-docs">
               <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
           </div>
         </div>
-        <div class="markdown-body"><p>#Pre-project Thoughts and Considerations</p>
-<p>GRAB STUFF FROM PANTHEON QUARTLY REPORT</p>
-<p>GRAB STUFF FROM OUR PRE-LAUNCH CHECKLIST</p>
-<h2 id="things-to-think-about">Things to think about</h2>
+        <div class="markdown-body"><h1 id="pantheon-backups">Pantheon backups</h1>
+<p>when paying for an account, Pantheon provides automatic backups per environment. But, if you don&apos;t pay for the account, there is no automation. Here is a way to fix it.</p>
 <ul>
-<li>Meta-tags:
-<ul>
-<li>Where is the info coming from?</li>
-<li>Is automatically populated from fields, fallback or does the user have to enter everyrthing?</li>
-<li>Do you need custom tokens to get the data you need?</li>
+<li>Connect to raspberry pi 10.1.16.105. This must be done in the office or on the BC VPN.<br>
+<code>ssh pi@10.1.16.105</code></li>
+<li>goto the bin directory<br>
+<code>cd /usr/local/bin</code></li>
+<li>Set up files for you project and envirnoments. Filenames should be [project]-[env]-[frequency]</li>
 </ul>
-</li>
-<li>Sitemap:</li>
-<li>Redirects:
-<ul>
-<li>How will redirects be handeled?</li>
-</ul>
-</li>
-<li>Domains:
-<ul>
-<li>Will you be forcing https (YES)?</li>
-<li>Will you be using www. or just the bare domain?</li>
-</ul>
-</li>
-</ul>
-<h2 id="things-to-do">Things to do</h2>
-<ul>
-<li>If you are on Pantheon:
-<ul>
-<li>Enable New Relic</li>
-<li>Set settings for New Relic</li>
-<li>Enable New Relic Module (<a href="https://www.drupal.org/project/new_relic_rpm">https://www.drupal.org/project/new_relic_rpm</a>)</li>
-<li>Enable Pantheon Advanced Page Cache module (<a href="https://www.drupal.org/project/pantheon_advanced_page_cache">https://www.drupal.org/project/pantheon_advanced_page_cache</a>)</li>
-<li>Setup Quicksilver
-<ul>
-<li>At the very least set it up to notify New Relic of pushes</li>
-<li>(Optional) Set it up to auto import config</li>
-<li>(Optional) Set it up to notify Slack</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Copy project-live-daily cron job for live, test, dev</p>
 
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="../d8/setup.html"><span class="title">Setup</span></a></div>
-          <div class="right"><a href="../d8/pre-launch.html"><span class="label">Next: </span><span class="title">Pre-Launch Planning</span></a></div>
+          <div class="left"><a href="../pantheon/index.html"><span class="title">Pantheon</span></a></div>
+          <div class="right"><a href="../pantheon/quicksilver.html"><span class="label">Next: </span><span class="title">Quicksilver</span></a></div>
         </div>
       </div>
     </div>

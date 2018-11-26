@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../assets/style.css?t=615badd5">
     <link rel="stylesheet" href="../main.css?t=734caa58">
-    <script src="../assets/script.js?t=36f3d457"></script>
+    <script src="../assets/script.js?t=42463e55"></script>
     <script src="../scripts.js?t=56b80ffb"></script>
     <title>Quicksilver - Drupal Docs</title>
     <meta name="viewport" content="width=device-width">
@@ -67,6 +67,8 @@
             </li>
             <li class="menu-item -level-1 -parent"><a class="link title  link-pantheon" href="../pantheon/index.html">Pantheon</a>
               <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-pantheonbackups" href="../pantheon/backups.html">Backups</a>
+                </li>
                 <li class="menu-item -level-2"><a class="link title -active link-pantheonquicksilver" href="../pantheon/quicksilver.html">Quicksilver</a>
                 </li>
               </ul>
@@ -100,10 +102,41 @@
               <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
           </div>
         </div>
-        <div class="markdown-body">
+        <div class="markdown-body"><h1 id="quicksilver">Quicksilver</h1>
+<p><a href="https://pantheon.io/docs/quicksilver/">Official Documentation</a></p>
+<p>Basically we can hook into Pantheon&apos;s Workflow to automatically trigger scripts and processes to run. This way we can automate certain tasks. Best example for Drupal 8 is to autamate configuration import when pushing to TEST or LIVE.</p>
+<p><a href="https://github.com/pantheon-systems/quicksilver-examples/">Quicksilver cript examples</a></p>
+<p>Below is what we typically add to our pantheon.yml files for automatic config import and notification to New Relic. Both are fvery helpful. You may need to just copy paste certain parts to add to your current pantheon.yml file.</p>
+<pre><code>workflows:
+
+  sync_code:              #push code to DEV/MULTI-DEV
+    after:
+      -
+        type: webphp
+        description: Import configuration from .yml files
+        script: private/drush_config_import.php
+      -
+        type: webphp
+        description: Log to New Relic
+        script: private/new_relic_deploy.php
+
+  deploy:                 #push code to TEST/LIVE
+    after:
+      -
+        type: webphp
+        description: Import configuration from .yml files
+        script: private/drush_config_import.php
+      -
+        type: webphp
+        description: Log to New Relic
+        script: private/new_relic_deploy.php
+
+</code></pre>
+<p>These files can be found <a href="https://github.com/bluecadet/drupal-docs/tree/master/examples/quicksilver_scripts">here:</a></p>
+
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="../pantheon/index.html"><span class="title">Pantheon</span></a></div>
+          <div class="left"><a href="../pantheon/backups.html"><span class="title">Backups</span></a></div>
           <div class="right"><a href="../pms.html"><span class="label">Next: </span><span class="title">What PM's Need to know</span></a></div>
         </div>
       </div>
