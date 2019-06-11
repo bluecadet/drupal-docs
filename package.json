@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/bluecadet/drupal-docs#readme",
   "devDependencies": {
+    "clean-css": "^4.2.1",
     "debug": "^3.2.6",
     "docpress": "^0.7.6",
     "extend": ">=2.0.2",
