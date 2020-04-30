@@ -21,7 +21,7 @@
   "devDependencies": {
     "clean-css": "^4.2.1",
     "debug": "^3.2.6",
-    "docpress": "^0.7.6",
+    "docpress": "^0.8.1",
     "extend": ">=2.0.2",
     "lodash": "^4.17.14",
     "lodash.merge": ">=4.6.2",
