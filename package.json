@@ -23,7 +23,7 @@
     "debug": "^3.2.6",
     "docpress": "^0.8.1",
     "extend": ">=2.0.2",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.19",
     "lodash.merge": ">=4.6.2",
     "marked": "^0.7.0",
     "node-pre-gyp": "^0.11.0",
