@@ -2,7 +2,7 @@
 
 * Had previously ran the terminus build project.  Starting from there…
 * Cloned git repo to local
-```
+```shell
 git clone git@github.com:bluecadet/nhmla.git nhmla
 ```
 * created Code workspace for new site
@@ -12,7 +12,7 @@ git clone git@github.com:bluecadet/nhmla.git nhmla
 *  add .lando.yml to .gitignore and committed
 * add `debug: true` to .land.yml
 * added to .land.yml
-```
+```yaml
 services:
   appserver:
     run_as_root:
@@ -32,7 +32,7 @@ ALL GOOD
 * turned off behat tests in .circleci/config.yml and committed
 * Changed Circle config ->advanced settings to ‘Only build pull requests’ to ‘On’
 *  added settings.local.php
-```
+```php
 <?php
 
 /**
@@ -153,7 +153,7 @@ $config['system.performance']['cache']['page']['max_age'] = 0;
 ```
 
 * added local.services.yml
-```
+```yaml
 # Local development services.
 #
 # To activate this feature, follow the instructions at the top of the
@@ -181,7 +181,7 @@ Make sure New Relic is enabled
 	* drush_config_import.php
 	* new_relic_deploy.php
 * Update pantheon.yml
-```
+```yaml
 
   sync_code:              #push code to DEV/MULTI-DEV
     after:
@@ -227,7 +227,7 @@ pantheon_advanced_page_cache
 paragraphs
 redis
 
-```
+```shell
 lando composer require drupal/admin_toolbar drupal/config_devel drupal/config_split drupal/ctools drupal/devel drupal/diff drupal/focal_point drupal/hsts  drupal/inline_entity_form drupal/new_relic_rpm drupal/pantheon_advanced_page_cache drupal/paragraphs drupal/redis
 
 cd web
@@ -246,7 +246,7 @@ simple_sitemap
 token
 viewsreference
 
-```
+```shell
 lando composer require drupal/metatag drupal/pathauto drupal/redirect drupal/token drupal/viewsreference
 
 cd web
@@ -267,7 +267,7 @@ block_content
 media
 responsive_image
 
-```
+```shell
 lando drush en block_content media responsive_image
 ```
 
@@ -281,7 +281,7 @@ quickedit
 rdf
 tour
 
-```
+```shell
 lando drush pmu big_pipe color comment help history quickedit rdf tour
 
 ```
@@ -298,7 +298,7 @@ Note: delete comment field on Article before trying to run above command
 	* [Related contributed modules | Drupal.org](https://www.drupal.org/node/1068570)
 * Need to add more domains so we can work locally with multiple domains in lando.
 * Added new domains to end of .lando.yml file
-```
+```yaml
 proxy:
   edge:
     - nhmla.lndo.site

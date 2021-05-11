@@ -2,7 +2,7 @@
 
 
 ## settings.local.php
-```
+```php
 <?php
 
 /**
@@ -125,7 +125,7 @@ $config['system.performance']['cache']['page']['max_age'] = 0;
 ## development.services.yml
 make sure you have development.services.yml file setup correctly
 
-```
+```yaml
 # Local development services.
 #
 # To activate this feature, follow the instructions at the top of the

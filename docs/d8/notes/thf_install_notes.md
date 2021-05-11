@@ -8,7 +8,7 @@
 * add .lando.yml to .gitignore
 * add `debug: true` to .land.yml
 * added to .land.yml
-```
+```yaml
 services:
   appserver:
     run_as_root:
@@ -27,7 +27,7 @@ GOOD TO GO!
 * Changed Circle config ->advanced settings to ‘Only build pull requests’ to ‘On’
 
 * added settings.local.php
-```
+```php
 <?php
 
 /**
@@ -148,7 +148,7 @@ $config['system.performance']['cache']['page']['max_age'] = 0;
 ```
 
 * added development.services.local.yml
-```
+```yaml
 # Local development services.
 #
 # To activate this feature, follow the instructions at the top of the
@@ -172,7 +172,7 @@ services:
 	* drush_config_import.php
 	* new_relic_deploy.php
 * Update pantheon.yml
-```
+```yaml
 
   sync_code:              #push code to DEV/MULTI-DEV
     after:
@@ -215,7 +215,7 @@ pantheon_advanced_page_cache
 paragraphs
 redis
 
-```
+```shell
 lando composer require drupal/admin_toolbar drupal/config_devel drupal/config_split drupal/ctools drupal/devel drupal/diff drupal/focal_point drupal/hsts  drupal/inline_entity_form drupal/new_relic_rpm drupal/pantheon_advanced_page_cache drupal/paragraphs drupal/redis
 
 cd web
@@ -234,7 +234,7 @@ simple_sitemap
 token
 viewsreference
 
-```
+```shell
 lando composer require drupal/metatag drupal/pathauto drupal/redirect drupal/token drupal/viewsreference
 
 cd web
@@ -254,7 +254,7 @@ devel_generate (submodule of devel)
 block_content
 media
 
-```
+```shell
 lando drush en block_content media
 ```
 
@@ -269,7 +269,7 @@ rdf
 responsive_image
 tour
 
-```
+```shell
 lando drush pmu big_pipe color comment help history quickedit rdf responsive_image tour
 
 ```

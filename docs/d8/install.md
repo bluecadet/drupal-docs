@@ -49,7 +49,7 @@ obviously change out dir and path...
   Run `terminus drush <site>.<env> -- ev 'return getenv("DRUPAL_HASH_SALT")'`
 1. Copy `/web/sites/example.settings.local.php` to `/web/sites/default/settings.local.php`
 1. Add DB info around line 17
-  ```
+  ```php
   $databases['default']['default'] = array (
     'database' => '[DB-name]',
     'username' => '[DB-username]',
@@ -62,12 +62,12 @@ obviously change out dir and path...
   );
   ```
 1. Add hash_salt from above to end of file. Should look something like:
-  ```
+  ```shell
   $settings['hash_salt'] = 'X/ZoCz4bINpIQq1xufoInrULRDtN0UABMUW7m09HcCY=';
   ```
 1. Setup local settings for domain name or however you have it setup
 1. Add trusted local host patterns for your local development
-```
+```shell
 $settings['trusted_host_patterns'][] = '^.+.localhost.com$';
 $settings['trusted_host_patterns'][] = '^localhost.com$';
 ```
@@ -90,7 +90,7 @@ If you do not already have lando installed, visit [https://docs.devwithlando.io/
 #### Get a local url
 Run `lando info`. In the resulting json, your local urls can be found at:
 
-```
+```json
 {
   ...
   "edge":
@@ -107,13 +107,13 @@ Visit one of these urls and make sure everything is working as expected.
 #### Notes:
 When using Lando, all `terminus` commands should be prepended with `lando`, i.e:
 
-```
+```shell
 lando terminus drush cim
 ```
 
 Lando and Apache often compete for localhost port 80, so it might make sense to stop Apache before running Lando, i.e.:
 
-```
+```shell
 sudo apachectl stop
 ```
 
@@ -154,7 +154,7 @@ sudo apachectl stop
 * paragraphs
 * redis
 
-```
+```shell
 lando composer require drupal/admin_toolbar drupal/config_devel drupal/config_split drupal/ctools drupal/devel drupal/diff drupal/focal_point drupal/hsts  drupal/inline_entity_form drupal/new_relic_rpm drupal/pantheon_advanced_page_cache drupal/paragraphs drupal/redis
 
 cd web
@@ -173,7 +173,7 @@ NOTE: turn on Redis LATER!!
 * token
 * viewsreference
 
-```
+```shell
 lando composer require drupal/metatag drupal/pathauto drupal/redirect drupal/token drupal/viewsreference
 
 cd web
@@ -193,7 +193,7 @@ lando drush en metatag pathauto redirect token viewsreference
 * block_content
 * media
 
-```
+```shell
 lando drush en block_content media
 ```
 
@@ -208,7 +208,7 @@ lando drush en block_content media
 * responsive_image
 * tour
 
-```
+```shell
 lando drush pmu big_pipe color comment help history quickedit rdf responsive_image tour
 
 ```

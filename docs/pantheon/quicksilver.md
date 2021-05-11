@@ -8,7 +8,7 @@ Basically we can hook into Pantheon's Workflow to automatically trigger scripts 
 
 Below is what we typically add to our pantheon.yml files for automatic config import and notification to New Relic. Both are fvery helpful. You may need to just copy paste certain parts to add to your current pantheon.yml file.
 
-```
+```yaml
 workflows:
 
   sync_code:              #push code to DEV/MULTI-DEV

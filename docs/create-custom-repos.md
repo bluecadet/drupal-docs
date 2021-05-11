@@ -5,7 +5,7 @@ There are some modules we continually re-use and want to manage and maintain for
 - Create Github repo. It would probably be good to name it the same as the module name.
 - Add files for a typical drupal module.
 - Add composer.json file. Note the 'type' settings. It should be set to 'custom-drupal-module'. This will allow the module to be installed in the proper directory. Should look similar to this:
-```
+```json
 {
   "name": "bluecadet/[MODULE]",
   "description": "DESCRIPTION",
