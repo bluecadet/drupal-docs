@@ -19,16 +19,16 @@
   },
   "homepage": "https://github.com/bluecadet/drupal-docs#readme",
   "devDependencies": {
-    "clean-css": "^4.2.1",
-    "debug": "^3.2.6",
+    "clean-css": "^5.1.2",
+    "debug": "^4.3.1",
     "docpress": "^0.8.2",
-    "extend": ">=2.0.2",
-    "lodash": "^4.17.19",
+    "extend": ">=3.0.2",
+    "lodash": "^4.17.21",
     "lodash.merge": ">=4.6.2",
-    "marked": "^0.7.0",
+    "marked": "^2.0.3",
     "node-pre-gyp": "^0.11.0",
     "websocket-extensions": ">=0.1.4",
-    "yargs-parser": ">=13.1.2"
+    "yargs-parser": ">=20.2.7"
   },
   "docpress": {
     "docs": "docs",
